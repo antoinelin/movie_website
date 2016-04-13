@@ -10,7 +10,8 @@ export default {
         imgDir: 'img/',
         jsDir: 'js/',
         sassDir: 'sass/',
-        fontsDir: 'fonts/'
+        fontsDir: 'fonts/',
+        phpDir: 'php/'
     },
     fonts: {
         formats: 'woff woff2',

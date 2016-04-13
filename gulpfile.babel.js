@@ -33,7 +33,7 @@ import ttf2woff2  from 'gulp-ttf2woff2';
 import watch  from 'gulp-watch';
 import webpack  from 'gulp-webpack';
 import config from './config.js';
-const { srcDir, buildDir, distDir, cssDir, imgDir, sassDir, fontsDir, jsDir } = config.dir;
+const { srcDir, buildDir, distDir, cssDir, imgDir, sassDir, fontsDir, jsDir, phpDir } = config.dir;
 
 
 
@@ -129,6 +129,15 @@ gulp.task('img', () => (
         }))
 ));
 
+// PHP
+gulp.task('php', () => (
+    gulp.src(`${srcDir + phpDir}**`)
+        .pipe(gulp.dest(buildDir + phpDir))
+        .pipe(reload({
+            stream: true
+        }))
+));
+
 
 
 // HTML
@@ -170,11 +179,12 @@ gulp.task('fonts', () => {
 
 // Dev
 gulp.task('dev', ['clean'], () => {
-    gulp.start('browser_sync', 'fonts', 'sass', 'img', 'js', 'html');
+    gulp.start('browser_sync', 'fonts', 'sass', 'img', 'js', 'html', 'php');
     watch(srcDir + imgDir + '**', () => gulp.start('img'));
     watch(srcDir + sassDir + '**/*.scss', () => gulp.start('sass'));
     watch(srcDir + fontsDir + '**/*', () => gulp.start('fonts'));
     watch(srcDir + '*.html', () => gulp.start('html'));
+    watch(srcDir + phpDir + '**/*', () => gulp.start('php'));
 });
 
 
