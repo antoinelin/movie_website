@@ -1,0 +1,16 @@
+/**
+ * Default component style
+ *
+ */
+
+.Default{
+	display: flex;
+	min-height: 100vh;
+
+	&_content{
+		margin: auto;
+		font-size: 1.75rem;
+		text-transform: uppercase;
+		color: $black;
+	}
+}

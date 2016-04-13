@@ -1,0 +1,31 @@
+/**
+ * Establish font settings
+ *
+ */
+
+html {
+    font-size: 100;
+    font-family: map-get($fonts_settings, font-family);
+}
+body {
+    font-size: map-get($fonts_settings, font-size);
+    line-height: map-get($fonts_settings, line-height);
+}
+
+
+
+/**
+ * Headings
+ *
+ */
+h1 {}
+h2 {}
+
+
+
+/**
+ * Content text
+ *
+ */
+p {}
+span {}
