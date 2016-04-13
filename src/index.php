@@ -12,7 +12,7 @@
       <main data-year="1960">
         <div class="Default">
             <div class="Default_content">
-                <h1>Chazefez.s</h1>
+                <h1>tamere.s</h1>
                 <canvas id="chart" data-type="line" width="400" height="400"></canvas>
             </div>
         </div>

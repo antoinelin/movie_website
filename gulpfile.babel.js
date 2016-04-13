@@ -138,6 +138,15 @@ gulp.task('php', () => (
         }))
 ));
 
+// PHP ROOT
+gulp.task('phpRoot', () => (
+    gulp.src(srcDir + '*.php')
+        .pipe(gulp.dest(buildDir))
+        .pipe(reload({
+            stream: true
+        }))
+));
+
 
 
 // HTML
@@ -179,12 +188,13 @@ gulp.task('fonts', () => {
 
 // Dev
 gulp.task('dev', ['clean'], () => {
-    gulp.start('browser_sync', 'fonts', 'sass', 'img', 'js', 'html', 'php');
+    gulp.start('browser_sync', 'fonts', 'sass', 'img', 'js', 'html', 'php', 'phpRoot');
     watch(srcDir + imgDir + '**', () => gulp.start('img'));
     watch(srcDir + sassDir + '**/*.scss', () => gulp.start('sass'));
     watch(srcDir + fontsDir + '**/*', () => gulp.start('fonts'));
     watch(srcDir + '*.html', () => gulp.start('html'));
     watch(srcDir + phpDir + '**/*', () => gulp.start('php'));
+    watch(srcDir + '*.php', () => gulp.start('phpRoot'));
 });
 
 
