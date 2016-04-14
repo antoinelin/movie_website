@@ -1,12 +1,12 @@
 $(document).ready(function() {
+    location.hash = '1';
     $('#fullpage').fullpage({
+
         //Navigation
         menu: '#myMenu',
-        lockAnchors: false,
-        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-        navigation: true,
+        anchors:['1', '2', '3', '4', '5', '6'],
         navigationPosition: 'left',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
+        navigationTooltips: ['1', '2', '3', '4', '5', '6'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -39,8 +39,6 @@ $(document).ready(function() {
         verticalCentered: true,
         resize : false,
         sectionsColor : ['#fefefe', '#111111'],
-        paddingTop: '3em',
-        paddingBottom: '10px',
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
@@ -50,7 +48,55 @@ $(document).ready(function() {
         slideSelector: '.slide',
 
         //events
-        onLeave: function(index, nextIndex, direction){},
+        onLeave: function(anchorLink, index){
+          if (index == 1){
+              //                loader()
+              $('.activeMenu').removeClass('activeMenu');
+              $('.activeText').removeClass('activeText');
+              $('.spanMenu1').addClass('activeMenu');
+              $('.spanMenu1').addClass('activeText');
+
+          }
+
+          if (index == 2){
+              //                loader()
+              $('.activeMenu').removeClass('activeMenu');
+              $('.activeText').removeClass('activeText');
+              $('.spanMenu2').addClass('activeMenu');
+              $('.spanMenu2').addClass('activeText');
+
+          }
+
+          //SLIDE 2
+          if (index == 3){
+              $('.activeMenu').removeClass('activeMenu');
+              $('.activeText').removeClass('activeText');
+              $('.spanMenu3').addClass('activeMenu');
+              $('.spanMenu3').addClass('activeText');
+          }
+
+          //SLIDE 3
+          if (index == 4){
+              $('.activeMenu').removeClass('activeMenu');
+              $('.activeText').removeClass('activeText');
+              $('.spanMenu4').addClass('activeMenu');
+              $('.spanMenu4').addClass('activeText');
+          }
+
+          //SLIDE 3
+          if (index == 5){
+              $('.activeMenu').removeClass('activeMenu');
+              $('.activeText').removeClass('activeText');
+              $('.spanMenu5').addClass('activeMenu');
+              $('.spanMenu5').addClass('activeText');
+          }
+          if (index == 6){
+              $('.activeMenu').removeClass('activeMenu');
+              $('.activeText').removeClass('activeText');
+              $('.spanMenu6').addClass('activeMenu');
+              $('.spanMenu6').addClass('activeText');
+          }
+        },
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},
         afterResize: function(){},
