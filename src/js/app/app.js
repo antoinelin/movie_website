@@ -24,6 +24,6 @@ chartsOf(year);
 
 //agora Apple Tv
 let years = document.querySelectorAll('.years .year')
-if (years) {
+if (years != undefinied) {
   document.onmousemove = appleTvAgora
 }
