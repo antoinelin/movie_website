@@ -22,14 +22,14 @@ main.cd-winners{
       display: inline-block;
       font-size: 52px;
       color: #D0B02E;
-      font-family: 'didot';
+      font-family: $didot;
     }
     p{
       position: relative;
       display: inline-block;
       width: 570px;
       font-size: 20px;
-      font-family: ProximaRegular;
+      font-family: $ProximaRegu;
       &::before{
         content: '';
         position: absolute;
@@ -85,12 +85,12 @@ main.cd-winners{
 				h2{
 					font-size: 52px;
 					color: #D0B02E;
-					font-family: 'didot';
+					font-family: $didot;
 				}
 				p{
 					font-size: 20px;
 					padding-top: 30px;
-					font-family: 'ProximaRegular';
+					font-family: $ProximaRegu;
 				}
 				p.specs{
 					strong{
@@ -98,7 +98,8 @@ main.cd-winners{
 					}
 				}
 				h3.price{
-					font-size: 32;
+					padding-top: 30px;
+					font-size: 32px;
 				}
 			}
 		}
@@ -109,7 +110,7 @@ main.cd-winners{
     position: absolute;
     text-decoration: none;
     font-size: 24px;
-    font-family: ProximaRegular;
+    font-family: $ProximaRegu;
     top: 80px;
     right: 60px;
     &::before{
@@ -129,7 +130,7 @@ main.cd-winners{
     left: 70px;
     bottom: 70px;
     font-size: 24px;
-    font-family: ProximaRegular;
+    font-family: $ProximaRegu;
     &::before{
       content: '';
       position: absolute;

@@ -22,6 +22,6 @@ function chartsOf(year){
 chartsOf(year);
 
 
-//agora Apple Tv
-let years = document.querySelectorAll('.years .year')
-document.onmousemove = appleTvAgora
+// //agora Apple Tv
+// let years = document.querySelectorAll('.years .year')
+// document.onmousemove = appleTvAgora

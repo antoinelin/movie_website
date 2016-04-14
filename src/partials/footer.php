@@ -1,4 +1,3 @@
-	</div>
 	<footer>
 	</footer>
 	<script src="<?= URL ?>js/vendors/jquery-2.1.4.min.js"></script>

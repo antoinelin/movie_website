@@ -12,6 +12,7 @@
  * Date of creation : 2012-09-05
  * Last updated: 2015-20-11
  */
+@import "base/reset";
 @import "utils/mixins";
 
 @import "themes/colors";
@@ -22,7 +23,6 @@
 
 @import "themes/default";
 
-@import "base/reset";
 @import "base/typography";
 @import "base/form";
 @import "base/buttons";
