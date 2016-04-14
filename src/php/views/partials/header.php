@@ -5,7 +5,7 @@
         <title>Cannes Retrospective</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="<?= URL ?>../__build__/css/style.css">
+        <link rel="icon" href="<?= URL ?>img/favicon.png">
     </head>
     <body>
