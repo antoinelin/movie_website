@@ -1,34 +1,8 @@
 <div class="years">
-    <div class="year"><p>1960</p></div>
-    <div class="year"><p>1961</p></div>
-    <div class="year"><p>1962</p></div>
-    <div class="year"><p>1963</p></div>
-    <div class="year"><p>1964</p></div>
-    <div class="year"><p>1965</p></div>
-    <div class="year"><p>1966</p></div>
-    <div class="year"><p>1967</p></div>
-    <div class="year"><p>1968</p></div>
-    <div class="year"><p>1969</p></div>
-    <div class="year"><p>1970</p></div>
-    <div class="year"><p>1971</p></div>
-    <div class="year"><p>1972</p></div>
-    <div class="year"><p>1973</p></div>
-    <div class="year"><p>1974</p></div>
-    <div class="year"><p>1975</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-    <div class="year"><p>1976</p></div>
-  </div>
+  <?php
+  $festivals = $db->query("SELECT * FROM cannes");
+  $festivals = $festivals->fetchAll();
+  foreach ($festivals as $festival) :?>
+  <div class="year"><p><?= $festival->year ?></p></div>
+<?php endforeach ?>
+</div>

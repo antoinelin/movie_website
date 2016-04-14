@@ -1,7 +1,7 @@
 <?php
 
 	// Config
-	// include 'config/config.php';
+	 include 'php/config/database.php';
 
 	// Includes
 
