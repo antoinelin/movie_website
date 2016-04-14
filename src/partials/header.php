@@ -20,8 +20,5 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <header>
-      Header
-  </header>
   <body class="page-<?= $class ?>">
     <div class="container">

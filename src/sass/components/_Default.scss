@@ -15,3 +15,15 @@
 //        color: $default-fontColor;
 //    }
 //}
+.titre{
+  a{
+    margin-left: 200px;
+    text-decoration: none;
+    font-family: $ProximaBold;
+    font-size: 3em;
+  }
+  a:hover{
+    color: gold;
+  }
+
+}

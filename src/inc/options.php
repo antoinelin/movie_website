@@ -1,2 +1,2 @@
 <?php
-define('URL','http://localhost/__template-routing__/__build__/');
+define('URL','http://localhost:81/movie_website/__build__/');

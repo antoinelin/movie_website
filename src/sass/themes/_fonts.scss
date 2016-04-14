@@ -1,7 +1,7 @@
 $source : "../fonts/ProximaNova/";
 $source2 : "../fonts/Didot/";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-@include font-face(Didot, $source2, null, null, ttf);
+@include font-face(Didot, $source2, null, null, woff woff2);
 @include font-face(proximanova-black-webfont, $source, 900, bolder, woff2 woff);
 @include font-face(proximanova-bold-webfont, $source, 800, bold, woff2 woff);
 @include font-face(proximanova-light-webfont, $source, 200, lighter, woff2 woff);

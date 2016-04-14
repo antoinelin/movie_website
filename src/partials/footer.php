@@ -1,5 +1,5 @@
+	</div>
 	<footer>
-		Footer
 	</footer>
 	<script src="<?= URL ?>js/vendors/jquery-2.1.4.min.js"></script>
 	<script src="<?= URL ?>js/vendors/jquery.fullpage.min.js"></script>

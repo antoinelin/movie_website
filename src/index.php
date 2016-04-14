@@ -23,6 +23,6 @@ else
 
 // Includes
 include 'controllers/'.$page.'.php';
-include './partials/header.php';
-include './pages/'.$page.'.php';
-include './partials/footer.php';
+include 'partials/header.php';
+include 'pages/'.$page.'.php';
+include 'partials/footer.php';
