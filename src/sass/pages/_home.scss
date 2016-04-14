@@ -29,3 +29,8 @@
   transform: translateX(30%) scaleX(1.625);
   background: #0760fe;
 }
+
+.home_project-indicator:target:after {
+  transform: translateX(30%) scaleX(1.625);
+  background: #0760fe;
+}
