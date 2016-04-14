@@ -7,7 +7,6 @@ include 'inc/options.php';
 
 // Get the query
 $q = empty($_GET['q']) ? '' : $_GET['q'];
-
 // Routes
 if($q == '')
 	$page = 'home';

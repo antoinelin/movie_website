@@ -1,6 +1,8 @@
 <?php
 
 $target_year = $_GET["year"];
+$title = 'edition '.$target_year;
+$class = 'edition';
 
 
 $data = $pdo->query("SELECT * from movies WHERE year =".$target_year);
@@ -41,6 +43,7 @@ foreach ($movies as $movie) {
       $stats["genres_total"][]= $_genre;
     }
   }
+
 }
 
 
@@ -54,5 +57,5 @@ $stats["origins"] = count(array_count_values($stats["origins"]));
 $stats["genres_total"] = count(array_count_values($stats["genres_total"]));
 
 
-echo "<pre>"; print_r($stats); echo "<pre>";
-echo "<pre>"; print_r($festival); echo "<pre>";
+//echo "<pre>"; print_r($stats); echo "<pre>";
+//echo "<pre>"; print_r($festival); echo "<pre>";
