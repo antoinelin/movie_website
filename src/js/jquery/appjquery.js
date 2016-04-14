@@ -56,6 +56,7 @@ $(document).ready(function() {
               $('.spanMenu1').addClass('activeMenu');
               $('.spanMenu1').addClass('activeText');
 
+
           }
 
           if (index == 2){
@@ -97,10 +98,10 @@ $(document).ready(function() {
               $('.spanMenu6').addClass('activeText');
           }
         },
-        onLeave: function(anchorLink, index){
-          if(anchorLink == 'films'){
-               $('#myMenu').addClass('dispMenu');
-           }
+        onSlideLeave: function( anchorLink, index, slideIndex){
+          if(index == 1 && slideIndex == 1){
+            console.log('yo');
+          }
         },
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},
