@@ -1,9 +1,0 @@
-/**
- * strip-units
- *
- * @param {string} $number
- * @return {int}
- */
-@function strip-units($number){
-    @return $number / ($number * 0 + 1);
-}
