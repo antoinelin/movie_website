@@ -115,6 +115,10 @@ main.cd-winners{
 			width: 20%;
 	    top: 10%;
 	    left: 50px;
+			transition: all .3s ease;
+	    	&:hover{
+    		transform: translateX(30px) translateZ(0);
+	    	}
 			&::before{
 				content: '';
 	      position: absolute;
@@ -123,10 +127,6 @@ main.cd-winners{
 	      height: 2px;
 	      top: 50%;
 	      left: -50px;
-				transition: all .3s ease;
-			}
-			&:hover::before{
-				left: -30px;
 			}
 		}
 	}
@@ -146,12 +146,12 @@ main.cd-winners{
       width: 2px;
       height: 70px;
       left: 50%;
-      top: -100px;
+      top: -80px;
 			transition: all .3s ease;
 
     }
 		&:hover::before{
-			top: -80px;
+			transform: translateY(-20px) translateZ(0);
 		}
   }
   a.current-year{
