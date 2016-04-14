@@ -1,5 +1,6 @@
 <?php
 
+
 // Config
 include 'inc/options.php';
 include 'inc/config.php'; // Uncomment if you need database
@@ -10,8 +11,8 @@ $q = empty($_GET['q']) ? '' : $_GET['q'];
 // Routes
 if($q == '')
 	$page = 'home';
-else if($q == 'editions' || preg_match('/^editions\/[0-9]+$/',$q)
-	$page = 'editions';
+else if($q == 'edition')
+	$page = 'edition';
 else if($q == 'dates')
 	$page = 'dates';
 else if($q == 'winners')
