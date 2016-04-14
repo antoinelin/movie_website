@@ -3,7 +3,7 @@
 
 // Config
 include 'inc/options.php';
-include 'inc/config.php'; // Uncomment if you need database
+// include 'inc/config.php'; // Uncomment if you need database
 
 // Get the query
 $q = empty($_GET['q']) ? '' : $_GET['q'];
