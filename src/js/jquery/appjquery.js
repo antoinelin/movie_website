@@ -97,6 +97,11 @@ $(document).ready(function() {
               $('.spanMenu6').addClass('activeText');
           }
         },
+        onLeave: function(anchorLink, index){
+          if(anchorLink == 'films'){
+               $('#myMenu').addClass('dispMenu');
+           }
+        },
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},
         afterResize: function(){},

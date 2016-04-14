@@ -1,4 +1,5 @@
 import $ from 'jquery'
+import '../jquery/appjquery.js'
 import { year } from '../actions/currentYear'
 import { getDataFromDB } from '../dispatchers/database'
 import { drawCharts } from '../actions/chartDrawer'
