@@ -14,6 +14,10 @@ else if($q == 'edition')
 	$page = 'edition';
 else if($q == 'dates')
 	$page = 'dates';
+else if($q == 'winners')
+	$page = 'winners';
+else if($q == 'years')
+	$page = 'years';
 // else if($q == 'news')
 // 	$page = 'news';
 // else if(preg_match('/^news\/[-a-z0-9]+$/',$q)) // news/mon-titre-d-actualite

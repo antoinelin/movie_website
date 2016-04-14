@@ -1,0 +1,31 @@
+.home_project-indicators {
+    position: absolute;
+    z-index: 1000;
+    top: 75%;
+    transform: translateY(-50%);
+    list-style: none;
+    li {
+      position: relative;
+      box-sizing: content-box;
+      width: 100px;
+      height: 10px;
+      cursor: pointer;
+    }
+}
+.home_project-indicator:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 2px;
+    content: '';
+    transition: background .3s ease-out;
+    transition: transform .2s ease-out,background .3s ease-out;
+    transition: transform .2s ease-out,background .3s ease-out;
+    background: #111;
+}
+.home_project-indicator:hover:after {
+  transform: translateX(30%) scaleX(1.625);
+  background: #0760fe;
+}
