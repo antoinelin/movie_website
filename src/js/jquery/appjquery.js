@@ -30,7 +30,7 @@ $(document).ready(function() {
         normalScrollElementTouchThreshold: 5,
 
         //Accessibility
-        keyboardScrolling: true,
+        keyboardScrolling: false,
         animateAnchor: true,
         recordHistory: true,
 

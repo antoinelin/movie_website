@@ -17,7 +17,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="link-editions" data-destination="cd-editions" data-type="page-transition" href="<?= URL?>/editions" >Editions</a>
+				<a class="link-editions" data-destination="cd-editions" data-type="page-transition" href="<?= URL?>editions" >Editions</a>
 			</div>
 		</section>
 		<div class="charts-content">
