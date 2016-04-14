@@ -46,7 +46,7 @@
 
 .cd-retrospective .informations-title h1{
 	font-size: 64px;
-	font-family: ProximaBlack;
+	font-family: $ProximaBlack;
 	margin: 2.4vh 0 0 0;
 }
 
@@ -81,13 +81,13 @@
 }
 
 .cd-retrospective .informations h2{
-	font-family: ProximaBlack;
+	font-family: $ProximaBlack;
 	font-size: 84px;
 	margin-bottom: 5px;
 }
 
 .cd-retrospective .informations p{
-	font-family: ProximaRegular;
+	font-family: $ProximaRegu;
 	font-size: 20px;
 	margin: 0;
 }
@@ -101,7 +101,7 @@
 	transform: translateX(0);
 	text-decoration: none;
 	color: #F9F9F9;
-	font-family: ProximaRegular;
+	font-family: $ProximaRegu;
 	font-size: 24px;
 	text-transform: uppercase;
 	transition: all 0.3s ease;
@@ -210,7 +210,7 @@
 	height: 4vh;
 	background: transparent;
 	color: #F9F9F9;
-	font-family: "ProximaRegular";
+	font-family: "$ProximaRegu";
 	border-radius: 25px;
 	cursor: pointer;
 	border: thin solid white;
@@ -236,7 +236,7 @@
 .cd-retrospective .charts-content .description p{
 	width: 80%;
 	margin-top: 5%;
-	font-family: 'ProximaRegular';
+	font-family: $ProximaRegu;
 	font-size: 20px;
 	text-align: justify;
 	/*border: thin solid lime;*/
