@@ -1,0 +1,62 @@
+.home_project-indicators {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    li {
+      position: relative;
+      box-sizing: content-box;
+      width: 100px;
+      height: 10px;
+      cursor: pointer;
+    }
+    a{
+      text-decoration: none;
+      text-align: right;
+    }
+    span{
+      position: relative;
+      left: 115px;
+    }
+    p{
+      font-family: $ProximaSemi;
+      font-size: 0.8em;
+      position: relative;
+      bottom: 5px;
+      transition: 100ms ease-out;
+      opacity: 0;
+    }
+}
+.home_project-indicator {
+  span:after{
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 2px;
+    content: '';
+    transition: background .3s ease-out;
+    transition: transform .2s ease-out,background .3s ease-out;
+    transition: transform .2s ease-out,background .3s ease-out;
+    background: #111;
+  }
+}
+.home_project-indicator:hover {
+  p{
+    color: #CC4F4F;
+    opacity: 1 !important;
+  }
+  span:after {
+    transform: translateX(30%) scaleX(1.625);
+    background: #CC4F4F;
+  }
+}
+.activeMenu:after{
+  transform: translateX(30%) scaleX(1.625);
+  background: #CC4F4F !important;
+}
+.activeText{
+  color: #CC4F4F !important;
+  opacity: 1 !important;
+}
