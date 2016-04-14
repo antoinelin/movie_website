@@ -20,7 +20,7 @@ $ cd votre_chemin/__template-routing__
 $ sudo npm i
 $ sudo npm start
 ```
-Pour profiter de browsersync sous serveur apache, mettez votre dossier dans votre dossier php (htdocs par défaut), et changer les ports par défaut MAMP en port 80.
+Pour profiter de browsersync sous serveur apache, mettez votre dossier dans votre dossier php (htdocs par défaut), et changez les ports par défaut MAMP en port 80.
 
 ## Vous trouverez
 
