@@ -13,7 +13,7 @@
 		</div>
 		<div class="cta-container">
 			<div class="cta">
-				<a href="<?= URL?>/editions" data-destination="cd-editions" data-type="page-transition">
+				<a href="<?= URL?>editions" data-destination="cd-editions" data-type="page-transition">
 					START
 				</a>
 			</div>
