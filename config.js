@@ -1,6 +1,6 @@
 export default {
     server: {
-        port: 8000
+        port: 80
     },
     dir: {
         srcDir: __dirname + '/src/',
