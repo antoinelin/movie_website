@@ -1,9 +1,10 @@
 <?php
 
-define('DB_HOST','localhost'); //your server
-define('DB_NAME','budget_view'); //your db
-define('DB_USER','root');
-define('DB_PASS','root'); // '' default on windows
+define('DB_HOST','hervelinalin.mysql.db');
+define('DB_NAME','hervelinalin');
+define('DB_USER','hervelinalin');
+define('DB_PASS','KetchupT2');
+define('DB_ENC', 'utf-8');
 
 try
 {
