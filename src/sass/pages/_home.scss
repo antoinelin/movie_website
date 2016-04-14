@@ -6,9 +6,6 @@
   position: absolute;
   width: 150px;
   height: 150px;
-/*  animation-name: fadeIn;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;*/
 }
 
 .cd-index .border:nth-child(1){
@@ -50,10 +47,6 @@
 .cd-index .content-block .main-logo{
   opacity: 1;
   transform: translateY(0px) translateZ(0);
-/*  animation-name: fadeInTranslateTop;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;*/
-
 }
 
 .cd-index .content-block h1{
@@ -108,11 +101,10 @@
   left: 50%;
   top: 12vh;
   width: 2px;
-  height: 15vh;
+  height: 8vh;
   background-color: #F9F9F9;
   opacity: 1;
   transition: transform 0.3s ease;
-
 }
 
 .cd-index .main-content .cta:hover{

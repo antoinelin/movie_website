@@ -2,8 +2,6 @@
 
 $target_year = $_GET["year"];
 
-$data = $pdo->query("SELECT * from cannes WHERE year =".$target_year);
-$festival = $data->fetch();
 
 $data = $pdo->query("SELECT * from movies WHERE year =".$target_year);
 $movies = $data->fetchAll();
