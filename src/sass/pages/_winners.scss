@@ -53,7 +53,9 @@ main.cd-winners{
 			margin: 35px;
 			display: inline-block;
       img{
-        width: 120px;
+        width: 200px;
+				height: 280px;
+				object-fit: contain;
       }
     }
 	}
