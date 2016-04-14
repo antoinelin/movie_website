@@ -45,4 +45,4 @@ function appleTvAgora(event) {
 
 }
 
-export{handleMouseMove}
+export{appleTvAgora}
