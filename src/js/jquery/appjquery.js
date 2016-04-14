@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         //Navigation
-        menu: '#menu',
+        menu: '#myMenu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage'],
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
         navigation: true,
         navigationPosition: 'left',
         navigationTooltips: ['firstSlide', 'secondSlide'],
