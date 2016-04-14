@@ -16,9 +16,9 @@ else if($q == 'edition')
 ## Installation
 
 ```shell
-cd votre_chemin/__template-routing__
-sudo npm i (attendez que les modules s'installent)
-sudo npm start
+$ cd votre_chemin/__template-routing__
+$ sudo npm i (attendez que les modules s'installent)
+$ sudo npm start
 ```
 Pour profiter de browsersync sous serveur apache, mettez votre dossier dans votre dossier php (htdocs par défaut), et changer les ports par défaut MAMP en port 80.
 
