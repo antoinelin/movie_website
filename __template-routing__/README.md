@@ -25,8 +25,7 @@ Pour profiter de browsersync sous serveur apache, mettez votre dossier dans votr
 ## Vous trouverez
 
 Les libs que je connais, après j'ai pas les CDN / noms de ceux qui vous allez, utilisés. Pensez donc à les rajouter et à commit.
-Les fonts
-Les icônes
+Les fonts, les icônes, la database d'Adrien
 Et d'autres trucs je m'en souviens plus
 
 ### Team 20 - çapesedanslegame
