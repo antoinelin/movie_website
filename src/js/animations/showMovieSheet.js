@@ -1,3 +1,10 @@
 function showMovieSheet() {
-  console.log('you youp');
+  let movieSheet = document.querySelector("section.winners-posters div.movie-sheet")
+  movieSheet.style.transform = `translateX(0%)`
 }
+function hideMovieSheet() {
+  let movieSheet = document.querySelector("section.winners-posters div.movie-sheet")
+  movieSheet.style.transform = `translateX(100%)`
+}
+export {showMovieSheet}
+export {hideMovieSheet}

@@ -60,21 +60,22 @@ main.cd-winners{
 		// MOVIE SHEET
 		div.movie-sheet{
 			// display: none;
-			transform: translateX(0%);
-			transition: transform .5s;
+			transform: translate3d(0, 0, 0) translateX(100%);
+			transition: transform .5s ease;
 			position: absolute;
 			left: 0;
 			top: 0;
 			width: 100%;
+			min-width: 1200px;
 			height: 100%;
 			background-color: #EFEFEF;
-			padding-left: 360px;
-			padding-top: 120px;
+			padding-left: 33%;
+			padding-top: 5%;
 			div.big-poster{
 				display: inline-block;
 				vertical-align: top;
 				img{
-					width: 300;
+					width: 300px;
 				}
 			}
 			div.description{
@@ -100,6 +101,7 @@ main.cd-winners{
 				h3.price{
 					padding-top: 30px;
 					font-size: 32px;
+					color: #D0B02E;
 				}
 			}
 		}

@@ -1,36 +1,18 @@
-<?php
-  // echo date('y');
-?>
 <main class="cd-winners">
   <header>
     <h1>21</h1>
     <p>Lorem ipsum dolor sit amet, elit Festival de Cannes. Donec vitae risus semper, facilisis justo in, fermentum est.</p>
   </header>
   <section class="winners-posters">
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
-    <a href="#"><img src="img/thumb-test.jpg" class="winner-poster"/></a>
+    <?php
+      for ($i= 0; $i < 22 ; $i++) {
+        echo '<a href="#"><img src="http://fr.web.img5.acsta.net/medias/nmedia/18/88/64/21/20079610.jpg" class="winner-poster"/></a>';
+      }
+    ?>
 
-    <div class="movie-sheet">
+    <div class="movie-sheet" style="transform: translateX(0%);">
       <div class="big-poster">
-        <img src="img/thumb-test.jpg" alt=""/>
+        <img src="http://fr.web.img5.acsta.net/medias/nmedia/18/88/64/21/20079610.jpg" alt=""/>
       </div>
       <div class="description">
         <h2>Nom du film</h2>

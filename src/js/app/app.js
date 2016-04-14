@@ -7,21 +7,25 @@ import { appleTvAgora } from '../views/appleTvAgora'
 import { showMovieSheet } from '../animations/showMovieSheet'
 
 
-function chartsOf(year){
-  //Get datas from API
-  getDataFromDB(year)
-  .then(response => {
-    drawCharts(response[0])
-    // console.log(response[0]);
-  })
-  .catch(err => {
-    console.log(err);
-  })
-}
-
-chartsOf(year);
+// function chartsOf(year){
+//   //Get datas from API
+//   getDataFromDB(year)
+//   .then(response => {
+//     drawCharts(response[0])
+//     // console.log(response[0]);
+//   })
+//   .catch(err => {
+//     console.log(err);
+//   })
+// }
+//
+// chartsOf(year);
 
 
 // //agora Apple Tv
 // let years = document.querySelectorAll('.years .year')
 // document.onmousemove = appleTvAgora
+
+
+let winnersPosters = document.querySelector("section.winners-posters a")
+winnersPosters.addEventListener('click', showMovieSheet)

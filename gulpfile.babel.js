@@ -149,6 +149,15 @@ gulp.task('html', () => (
         }))
 ));
 
+// HTACCESS
+gulp.task('htaccess', () => (
+    gulp.src('.htaccess')
+        .pipe(gulp.dest(buildDir))
+        .pipe(reload({
+            stream: true
+        }))
+));
+
 // PHP
 gulp.task('php', () => (
     gulp.src(srcDir + '*.php')
@@ -222,7 +231,7 @@ gulp.task('fonts', () => {
 
 // Dev
 gulp.task('dev', ['clean'], () => {
-    gulp.start('browser_sync', 'fonts', 'sass', 'img', 'js', 'jsvendors', 'html', 'php', 'inc', 'partials', 'controllers', 'page', 'extras');
+    gulp.start('browser_sync', 'fonts', 'sass', 'img', 'js', 'jsvendors', 'html', 'php', 'inc', 'partials', 'controllers', 'page', 'extras','htaccess');
     watch(srcDir + jsDir + 'vendors/*.js', () => gulp.start('jsvendors'));
     watch(srcDir + imgDir + '**', () => gulp.start('img'));
     watch(srcDir + sassDir + '**/*.scss', () => gulp.start('sass'));
@@ -234,6 +243,7 @@ gulp.task('dev', ['clean'], () => {
     watch(srcDir + '*.html', () => gulp.start('html'));
     watch(srcDir + '*.php', () => gulp.start('php'));
     watch(srcDir + '*.htaccess', () => gulp.start('extras'));
+    watch(srcDir + '.htaccess', () => gulp.start('htaccess'));
 
 });
 
