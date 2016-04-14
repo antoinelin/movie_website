@@ -13,14 +13,12 @@
 	// Routes
 	if($q == '')
 		$page = 'home';
-	else if($q == 'editions')
+	else if($q == 'editions' || preg_match('/^editions\/[0-9]+$/',$q))
 		$page = 'editions';
 	else if($q == 'dates')
 		$page = 'dates';
 	else if($q == 'retrospective')
 		$page = 'retrospective';
-	else if(preg_match('/^editions\/[0-9]+$/',$q)) // news/mon-titre-d-actualite
-		$page = 'news-single';
 	else
 		$page = '404';
 
