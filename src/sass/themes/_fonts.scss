@@ -1,3 +1,32 @@
+<<<<<<< HEAD
+=======
+$fonts_settings : (
+	'font-family' : 'Open Sans',
+	'font-size'   : 16px,
+    'line-height' : 24px
+);
+
+// @font-face {
+//     font-family: ProximaRegular;
+// 	src: url('fonts/Proxima-regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Proxima-regular/ProximaNova-Regular.otf') format('opentype'), url('fonts/Proxima-regular/ProximaNova-Regular.woff') format('woff'), url('fonts/Proxima-regular/ProximaNova-Regular.ttf') format('truetype'), url('fonts/Proxima-regular/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+//
+// @font-face {
+// 	font-family: 'ProximaBlack';
+// 	src: url('fonts/Proxima-black/ProximaNova-Black.eot?#iefix') format('embedded-opentype'), url('fonts/Proxima-black/ProximaNova-Black.otf') format('opentype'), url('fonts/Proxima-black/ProximaNova-Black.woff') format('woff'), url('fonts/Proxima-black/ProximaNova-Black.ttf') format('truetype'), url('fonts/Proxima-black/ProximaNova-Black.svg#ProximaNova-Black') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+//
+// @font-face {
+// 	font-family: 'Didot';
+// 	src: url('fonts/didot/Didot.eot?#iefix') format('embedded-opentype'), url('fonts/didot/Didot.woff') format('woff'), url('fonts/didot/Didot.ttf') format('truetype'), url('fonts/didot/Didot.svg#Didot') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+>>>>>>> master
 $source : "../fonts/ProximaNova/";
 $source2 : "../fonts/Didot/";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
