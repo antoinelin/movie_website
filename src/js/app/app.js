@@ -3,6 +3,7 @@ import { year } from '../actions/currentYear'
 import { getDataFromDB } from '../dispatchers/database'
 import { drawCharts } from '../actions/chartDrawer'
 import { appleTvAgora } from '../views/appleTvAgora'
+import { showMovieSheet } from '../animations/showMovieSheet'
 
 
 function chartsOf(year){
@@ -20,7 +21,6 @@ function chartsOf(year){
 chartsOf(year);
 
 
-console.log('youpu');
 //agora Apple Tv
 let years = document.querySelectorAll('.years .year')
 if (years) {

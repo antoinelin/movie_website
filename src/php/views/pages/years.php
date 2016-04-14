@@ -1,3 +1,9 @@
+<?php
+    // for ($i=time('Y'); $i < ; $i++) {
+    //   # code...
+    // }
+    
+?>
 <div class="years">
   <?php
   $festivals = $db->query("SELECT * FROM cannes");

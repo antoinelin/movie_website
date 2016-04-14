@@ -26,6 +26,7 @@
 
 	include 'php/views/partials/header.php';
 
-  include 'php/views/pages/years.php';
+  // include 'php/views/pages/years.php';
+  include 'php/views/pages/winners.php';
 
   include 'php/views/partials/footer.php';
