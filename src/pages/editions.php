@@ -5,7 +5,7 @@
             <div class="editions-container">
                 <div class="wrapper">
                     <? foreach ($years as $year) : ?>
-                        <article class="edition"><a data-destination='edition' data-type="page-transition" href="#"><?= $year->year ?></a></article>
+                        <article class="edition"><a data-destination='edition' data-type="page-transition" href="<?= URL.'edition&year='.$year->year ?>"><?= $year->year ?></a></article>
                         <?php endforeach ?>
                 </div>
             </div>
