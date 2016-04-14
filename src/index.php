@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< Updated upstream
 // Config
 include 'inc/options.php';
 include 'inc/config.php'; // Uncomment if you need database
