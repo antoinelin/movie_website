@@ -124,10 +124,7 @@ main.cd-winners{
 				transition: all .3s ease;
 			}
 			&:hover::before{
-				width: 20vw;
-				max-width: 280px;
-				left: 0px;
-				top: 100%;
+				left: -30px;
 			}
 		}
 	}
@@ -147,8 +144,13 @@ main.cd-winners{
       width: 2px;
       height: 70px;
       left: 50%;
-      top: -80px;
+      top: -100px;
+			transition: all .3s ease;
+
     }
+		&:hover::before{
+			top: -80px;
+		}
   }
   a.current-year{
     position: absolute;
@@ -162,7 +164,7 @@ main.cd-winners{
       content: '';
       position: absolute;
       background-color: black;
-      width: 50px;
+      width: 70px;
       height: 2px;
       top: 50%;
       left: -70px;
