@@ -2,34 +2,33 @@
 <main class="cd-winners">
   <header>
     <h1>21</h1>
-    <p>Lorem ipsum dolor sit amet, elit Festival de Cannes. Donec vitae risus semper, facilisis justo in, fermentum est.</p>
+    <p>Ici, la liste des nominés. Des nouveaux espoirs aux plus attendus, ils ont fait l'histoire du Festival.</p>
   </header>
   <section class="winners-posters">
     <?php
-      for ($i= 0; $i < 22 ; $i++) {
-        echo '<a href="#"><img src="http://fr.web.img5.acsta.net/medias/nmedia/18/88/64/21/20079610.jpg" class="winner-poster"/></a>';
+      for ($i= 0; $i < count($movies) ; $i++) {
+          echo '<a data-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/></a> ';
       }
     ?>
   </section>
-  <section class="movie-sheet" >
+  <? foreach ($movies as $movie) : ?>
+  <section class="movie-sheet" style="transform: translateX(0);">
     <div class="big-poster">
-      <img src="http://fr.web.img5.acsta.net/medias/nmedia/18/88/64/21/20079610.jpg" alt=""/>
+      <img src="<?= $posters[$movie] ?>" alt=""/>
     </div>
     <div class="description">
-      <h2>Nom du film</h2>
-      <p class="synopsis">Lorem ipsum dolor sit amet, elit Festival de Cannes. Donec vitae risus semper, facilisis justo in, fermentum est. Lorem ipsum dolor sit amet, elit Festival de Cannes. Donec vitae risus semper, facilisis justo in, fermentum est. </p>
-      <p class="specs"><strong>Film Director :</strong> Jean Claude Van Damme </p>
-      <p class="specs">
-        <strong>Actors :</strong>
-        Jean Claude Van Damme<br>
-        Jean Claude Van Damme<br>
-        Jean Claude Van Damme
-      </p>
-      <p class="specs"><strong>Category :</strong> Jean Claude Van Damme </p>
-      <h3 class="price">Palme d'Or of Festival de Cannes</h3>
+      <h2><?= $movie ?></h2>
+      <p class="synopsis"><?= $synopsis[$movie] ?></p>
+      <p class="specs"><strong>Film Director : </strong><?= $directors[$movie]?></p>
+      <p class="specs"><strong>Category : </strong><?= $categories[$movie]?></p>
+      <p class="specs"><strong>Duration : </strong><?= $durations[$movie]?>min</p>
+      <? if ($movie == $movie[0]) : ?>
+        <h3 class="price">Palme d&#39; Or of Festival de Cannes</h3>
+      <?php endif ?>
     </div>
     <a href="#" class="go-back">MOVIES IN COMPETITION</a>
   </section>
-  <a href="#" class="all-years">ALL YEARS</a>
+  <?php endforeach ?>
+  <a href="<?= URL?>editions" class="all-years">ALL YEARS</a>
   <a href="#" class="current-year">2005</a>
 </main>

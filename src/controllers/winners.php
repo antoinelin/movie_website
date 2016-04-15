@@ -1,27 +1,27 @@
 <?php
  
 $title = 'nominees';
-
+$class = 'nominees';
 // $target_year = $_GET["year"];
 
-$data = $pdo->query("SELECT * from movies WHERE year = 1987");
+$data = $pdo->query("SELECT * from movies WHERE year = 2004");
 $data = $data->fetchAll();
 
 
 // MOVIES
 $movies = Array();
 foreach ($data as $movie) {
+	if(!in_array($movie->name, $movies)){
 	$movies[] = $movie->name;
+	}
 }
 
 // POSTERS
 $posters = Array();
 foreach ($data as $poster) {
-  	$posters[$poster->name] = json_decode($poster->all_data)->backdrop_path;
-  	echo '<pre>';
-  	print_r($posters);
-  	echo '</pre>';
-  	// $poster = curl_call("http://api.themoviedb.org/3/movie/818/backdrop_path?api_key=862563071a7a140aeeb60ccd168442a2");
+  	$posters[$poster->name] = json_decode($poster->all_data)->poster_path;
+
+  	$posters[$poster->name] = "https://image.tmdb.org/t/p/original".$posters[$poster->name];
 }
 
 // DURATION
@@ -34,6 +34,8 @@ foreach ($data as $duration) {
 $synopsis = Array();
 foreach ($data as $synos) {
 	$synopsis[$synos->name] = $synos->synopsis;
+  	$synopsis[$synos->name] = str_replace(['"','"'], "" , $synopsis[$synos->name]);
+
 }
 
 // ORIGIN
@@ -50,11 +52,9 @@ foreach ($data as $origin){
 $categories = Array();
 foreach ($data as $category) {
 	if (!in_array($category->name, $categories) && !isset($categories[$category->name])){
-	  $category->genre = str_replace(['[',']','"','"]'], "" , $category->genre);
-	  $category->genre = explode(',', $category->genre);
-	  if(!empty($category->genre[0])){
-	    $categories[$category->name] = $category->genre[0];
-	  }
+	  	$category->genre = str_replace(['[',']','"','"]'], "" , $category->genre);
+	  	$category->genre = explode(',', $category->genre);
+    	$categories[$category->name] = $category->genre[0];
 	}
 }
 
@@ -69,22 +69,4 @@ foreach ($data as $director) {
 	}
 }
 
-// ACTORS
-$actors = Array();
-foreach ($data as $actor) {
-	// echo '<pre>';
-	// print_r(json_decode(json_encode($actor->directors)));
-	// echo '</pre>';
-	// $actors->directors->cast = json_encode($actors->directors->cast);
- //    if((!isset($actors[$data->name]))){
- //      for($i = 0; $i < 3; $i++){
- //        if(isset($data->directors->cast[$i])){
- //          $actors[$data->name][] = $data->directors->cast[$i]->name;
- //        }
- //      }
- //    }
-}
 
-
-
-// echo "<pre>"; print_r($categories); echo "</pre>";
