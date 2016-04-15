@@ -20,7 +20,7 @@
 
               <p>
                 <?php
-                if(isset($festival[0]->facts ))
+                if(!empty($festival[0]->facts ))
                 echo $festival[0]->facts;
                 else
                 echo 'There is no informations about this edition';
