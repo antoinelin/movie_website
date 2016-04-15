@@ -8,7 +8,7 @@
 				<div class="informations-container">
 					<div class="informations">
 						<h2>Retrospective</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, nesciunt quae at ab, mollitia incidunt nisi aut consectetur saepe cupiditate minus aspernatur enim natus doloremque eius officia debitis expedita sequi.
+						<p>Instead of looking at each edition on his own, dive into a year to year retrospective. <br>Here, the highlights of the industry and Festival evolution are shown.
 						</p>
 						<div class="mouseContainer">
 							<div class="mouse">
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div class="description">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eius tenetur architecto excepturi vitae iure nulla velit atque ipsa!</p>
+				<p>The budget illustrate how movie production increased through the years. Beware, the more expansive the movie doesn't mean the better !</p>
 			</div>
 		</div>
 	</div>
