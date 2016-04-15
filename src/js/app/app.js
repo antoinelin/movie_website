@@ -19,11 +19,16 @@ window.onload= ()=>{
 
   //Trigger animations on movies page
 	if(checkPatternPath('winners', hostname)){
-    let winnersPosters = document.querySelector("section.winners-posters a")
-    winnersPosters.addEventListener('click', showMovieSheet)
+    
+    let winnersPosters = document.querySelectorAll("section.winners-posters a")
+    for(var i = 0; i < winnersPosters.length; i++){
+      winnersPosters[i].addEventListener('click', showMovieSheet)
+    }
 
-    let goBackMovies = document.querySelector("section.movie-sheet a.go-back")
-    goBackMovies.addEventListener('click', hideMovieSheet)
+    let goBackMovies = document.querySelectorAll("section.movie-sheet a.go-back")
+    for(var i = 0; i < goBackMovies.length; i++){
+      goBackMovies[i].addEventListener('click', hideMovieSheet)
+    }
 	}
 
   //Get year datas from database

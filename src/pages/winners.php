@@ -7,12 +7,12 @@
   <section class="winners-posters">
     <?php
       for ($i= 0; $i < count($movies) ; $i++) {
-          echo '<a data-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/></a> ';
+          echo '<a data-attribute-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/></a> ';
       }
     ?>
   </section>
   <? foreach ($movies as $movie) : ?>
-  <section class="movie-sheet" style="transform: translateX(0);">
+  <section class="movie-sheet" data-attribute-movie="<?= $movie ?>">
     <div class="big-poster">
       <img src="<?= $posters[$movie] ?>" alt=""/>
     </div>
