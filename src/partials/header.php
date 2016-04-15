@@ -20,3 +20,10 @@
     <![endif]-->
   </head>
   <body class="page-<?= $class ?>">
+    <section class="mobile-device">
+      <div class="error-message">
+        <img class="main-logo" src="img/logotype_palm.png" alt="logo" width="70">
+              <h1>Cannes <br><span>Retrospective</span></h1>
+        <h2>You have to go on desktop to view this experience</h2>
+      </div>
+    </section>
