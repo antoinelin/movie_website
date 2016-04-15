@@ -1,15 +1,15 @@
 <?php
-include '../config/database.php';
+include '../inc/database.php';
 
 $dataToSend = Array();
 
 if(isset($_GET['datas'])){
-  $prepare = $db->prepare('SELECT * FROM movies WHERE year = :year');
+  $prepare = $pdo->prepare('SELECT * FROM movies WHERE year = :year');
   $prepare->bindValue('year',$_GET['datas'] );
   $execute = $prepare->execute();
   $datas = $prepare->fetchAll();
 
-  $prepare = $db->prepare('SELECT * FROM cannes WHERE year = :year');
+  $prepare = $pdo->prepare('SELECT * FROM cannes WHERE year = :year');
   $prepare->bindValue('year', $_GET['datas']);
   $execute = $prepare->execute();
   $dataCannes = $prepare->fetchAll();
@@ -21,11 +21,9 @@ if(isset($_GET['datas'])){
   $winner = (current((array)json_decode($dataCannes[0]->winners)));
   if(isset($winner->WINNERS)){
     for ($i = 0; $i < count($winner->WINNERS); $i++){
-      print_r($winner->WINNERS[$i]->movie);
     }
   } else if(isset($winner->WINNER)){
     $winner = $winner->WINNER[0]->movie;
-    print_r($winner);
   }
   //JURY
   $jury = [json_decode($dataCannes[0]->jury)->president, json_decode($dataCannes[0]->jury)->jury];
@@ -116,9 +114,26 @@ if(isset($_GET['datas'])){
     }
   }
 
-  $dataToSend = [$year, $winner, $jury, $poster, $fact, $edition, $movies, $budget, $origin, $genre, $directors, $posters, $synopsis, $actors];
-  // print_r(json_encode($dataToSend));
+  //CREATE FINAL OBJECT
+  $dataToSend = array(
+    "year" => $year,
+    "winner" => $winner,
+    "jury" => $jury,
+    "poster" => $poster,
+    "fact" => $fact,
+    "edition" => $edition,
+    "movies" => $movies,
+    "budget" => $budget,
+    "origin" => $origin,
+    "genre" => $genre,
+    "directors" => $directors,
+    "posters" => $posters,
+    "synopsis" => $synopsis,
+    "actors" => $actors,
+  );
 
+  $dataToSend = json_encode($dataToSend);
+  print_r($dataToSend);
 } else {
   echo "Error";
 }

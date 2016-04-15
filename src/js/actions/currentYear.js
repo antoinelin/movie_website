@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-export let year = $('main').attr('data-year')
+export let year = $('section').attr('data-year')
 
 
 
