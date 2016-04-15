@@ -72,40 +72,44 @@ main.cd-winners{
 		min-width: 1200px;
 		height: 100%;
 		background-color: #EFEFEF;
-		padding-left: 33%;
-		padding-top: 5%;
 		margin-top: 190px;
-		div.big-poster{
-			display: inline-block;
-			vertical-align: top;
-			img{
-				width: 300px;
-			}
-		}
-		div.description{
-			display: inline-block;
-			vertical-align: top;
-			width: 480px;
-			margin-left: 60px;
-			h2{
-				font-size: 52px;
-				color: #D0B02E;
-				font-family: $didot;
-			}
-			p{
-				font-size: 20px;
-				padding-top: 30px;
-				font-family: $ProximaRegu;
-			}
-			p.specs{
-				strong{
-					font-weight: bold;
+		div.description-container{
+			width: 1000px;
+			margin: 80px auto 0 auto;
+			div.big-poster{
+				display: inline-block;
+				vertical-align: top;
+				img{
+					width: 300px;
 				}
 			}
-			h3.price{
-				padding-top: 30px;
-				font-size: 32px;
-				color: #D0B02E;
+			div.description{
+				display: inline-block;
+				vertical-align: top;
+				width: 480px;
+				margin-left: 60px;
+				height: 450px;
+				overflow-y: scroll;
+				h2{
+					font-size: 52px;
+					color: #D0B02E;
+					font-family: $didot;
+				}
+				p{
+					font-size: 20px;
+					padding-top: 30px;
+					font-family: $ProximaRegu;
+				}
+				p.specs{
+					strong{
+						font-weight: bold;
+					}
+				}
+				h3.price{
+					padding-top: 30px;
+					font-size: 32px;
+					color: #D0B02E;
+				}
 			}
 		}
 		a.go-back{
@@ -113,8 +117,7 @@ main.cd-winners{
 	    text-decoration: none;
 	    font-size: 24px;
 	    font-family: $ProximaRegu;
-			width: 20%;
-	    top: 10%;
+	    top: 30px;
 	    left: 50px;
 			transition: all .3s ease;
 	    	&:hover{
@@ -160,7 +163,7 @@ main.cd-winners{
     text-decoration: none;
     font-size: 24px;
     left: 70px;
-    bottom: 70px;
+    bottom: 30px;
     font-size: 24px;
     font-family: $ProximaRegu;
     &::before{
