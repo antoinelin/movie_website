@@ -87,7 +87,7 @@
 
 .cd-index .main-content .cta a{
   padding: 10px 20px;
-  color: #f9f9f9; 
+  color: #f9f9f9;
   position: relative;
   text-decoration: none;
   display: block;
@@ -118,4 +118,12 @@
 .cd-index .main-content .cta:hover::after{
   transform: translateY(30px) translateZ(0);
 }
-
+.creditLink{
+  position: absolute;
+  top: 95%;
+  right: 1%;
+  transition: ease-out 200ms;
+}
+.creditLink:hover{
+  transform: scale(1.1);
+}

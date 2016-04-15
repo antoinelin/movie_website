@@ -1,3 +1,3 @@
 import $ from 'jquery'
 
-export let year = $('div').attr('data-year')
+export let year = $('#fullpage').attr('data-year')

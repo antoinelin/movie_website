@@ -11,6 +11,5 @@
             </div>
             <!-- <a href="index.html" data-type="page-transition">Back</a> -->
         </div>
-        <a class="link-retrospective" data-destination="cd-retrospective" href="<?= URL ?>/retrospective" data-type="page-transition">Retrospective</a>
     </div>
 </main>

@@ -10,7 +10,6 @@
       <div class="slide moviesCompetition" data-anchor="hoverview">
         <a class="moviesFlip" href="<?= URL."winners&year=".$festival[0]->year;?>">MOVIES IN</br>COMPETITION</a>
         <a href="<?= URL."editions" ?>"><h2 class="title_section"><span><?= $festival[0]->year ?></span></h2></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
         <section>
           <div class="picture">
             <img src="<?= $festival[0]->poster ?>" alt="poster cannes <?= $festival[0]->year ?>" />
@@ -20,7 +19,13 @@
               <h3>Edition n°<?= $festival[0]->edition ?></h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <?php
+                if(isset($festival[0]->facts ))
+                echo $festival[0]->facts;
+                else
+                echo 'There is no informations about this edition';
+                ?>
+
               </p>
             </header>
 
