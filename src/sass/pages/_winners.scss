@@ -63,7 +63,7 @@ main.cd-winners{
 				transform: translate3d(0, 0, 0);
 				transition: all .3s ;
 	    }
-			div.film-name{
+			div.movie-name{
 				font-size: 20px;
 				font-family: $ProximaBold;
 				color: white;
@@ -75,7 +75,7 @@ main.cd-winners{
 				text-align: center;
 				opacity: 0;
 			}
-			&:hover div.film-name{
+			&:hover div.movie-name{
 				opacity: 1;
 			}
 			&:hover img{
