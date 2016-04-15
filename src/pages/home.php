@@ -21,7 +21,7 @@
 
 	</div>
   <a href="<?= URL?>credit" class="creditLink">
-    <img src="../img/Group51.png" alt="credit" />
+    <img src="<?= URL ?>img/Group51.png" alt="credit" />
 
   </a>
 </main>
