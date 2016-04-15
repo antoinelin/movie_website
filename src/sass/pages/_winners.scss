@@ -52,15 +52,37 @@ main.cd-winners{
     overflow: scroll;
 
     a{
-    		position: relative;
+    	position: relative;
 			margin: 35px;
 			display: inline-block;
+			text-decoration: none;
 	  	img{
-	        width: 200px;
-			height: 280px;
-			object-fit: contain;
-	      }
-	 	&.winner::after{
+	      width: 200px;
+				height: 280px;
+				object-fit: contain;
+				transform: translate3d(0, 0, 0);
+				transition: all .3s ;
+	    }
+			div.film-name{
+				font-size: 20px;
+				font-family: $ProximaBold;
+				color: white;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 50;
+				text-align: center;
+				opacity: 0;
+			}
+			&:hover div.film-name{
+				opacity: 1;
+			}
+			&:hover img{
+				-webkit-filter: blur(1px) brightness(50%);
+				transform: scale(.95);
+			}
+	 		&.winner::after{
 	     	content:'';
 	     	position: absolute;
 	     	top: -5px;
@@ -69,9 +91,9 @@ main.cd-winners{
 	     	height: 32px;
 	     	background: url('../img/palm-prize.png');
 	     	background-repeat: no-repeat;
-			background-size: cover;
-     		}
-	    }
+				background-size: cover;
+     	}
+	  }
 	}
 		// MOVIE SHEET
 	section.movie-sheet{

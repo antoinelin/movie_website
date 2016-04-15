@@ -8,10 +8,10 @@
     <?php
       for ($i= 0; $i < count($movies) ; $i++) {
           if($i == 0){
-            echo '<a class="winner" data-attribute-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/></a> ';
+            echo '<a class="winner" data-attribute-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/><div class="film-name">'.trim($movies[$i]).'</div></a> ';
           }
           else {
-            echo '<a data-attribute-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/></a> ';
+            echo '<a data-attribute-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/><div class="film-name">'.trim($movies[$i]).'</div></a> ';
           }
       }
     ?>
