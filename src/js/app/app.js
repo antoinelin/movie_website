@@ -19,7 +19,7 @@ window.onload= ()=>{
 
   //Trigger animations on movies page
 	if(checkPatternPath('winners', hostname)){
-    
+
     let winnersPosters = document.querySelectorAll("section.winners-posters a")
     for(var i = 0; i < winnersPosters.length; i++){
       winnersPosters[i].addEventListener('click', showMovieSheet)
@@ -50,12 +50,11 @@ window.onload= ()=>{
   //Trigger tiles animations on years page
   else if (checkPatternPath('editions',hostname)) {
     //agora Apple Tv
-    let years = document.querySelectorAll('.edition a')
+    // let years = document.querySelectorAll('.edition a')
 		// console.log(years);
     document.onmousemove = appleTvAgora
 	}else {
 		console.log('fail');
 	}
 
-};
-export { years }
+}
