@@ -50,9 +50,12 @@ window.onload= ()=>{
   //Trigger tiles animations on years page
   else if (checkPatternPath('editions',hostname)) {
     //agora Apple Tv
-    let years = document.querySelectorAll('.years .year')
+    let years = document.querySelectorAll('.edition a')
+		// console.log(years);
     document.onmousemove = appleTvAgora
 	}else {
 		console.log('fail');
 	}
+
 };
+export { years }

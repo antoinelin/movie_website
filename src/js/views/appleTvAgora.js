@@ -1,3 +1,4 @@
+let years = document.querySelectorAll('.edition a')
 function appleTvAgora(event) {
   let dot, eventDoc, doc, body, pageX, pageY, yearX, yearY, rotationX, rotationY, distance, distanceX, distanceY;
 
@@ -19,6 +20,7 @@ function appleTvAgora(event) {
         Math.pow(distanceX , 2) + Math.pow(distanceY, 2)
       )
     )
+    console.log(distanceX);
     if (Math.abs(distanceX) < 300)
       rotationY = .016 * distanceX * 4
     else if (Math.abs(distanceX) < 600){
@@ -31,7 +33,7 @@ function appleTvAgora(event) {
       rotationY = 0
 
     if (Math.abs(distanceY) < 300)
-      rotationX = .016 * distanceY * 4
+      rotationX = .016 * distanceY * 6
     else if (Math.abs(distanceY) < 600)
       if (Math.abs(distanceY) == distanceY)
         rotationX = (-1*(distanceY)/60) + 10
@@ -40,7 +42,7 @@ function appleTvAgora(event) {
     else if (Math.abs(distanceY) > 600)
       rotationX = 0
     years[i].style.transform = `perspective(200px) rotateX(${-rotationX}deg) rotateY(${rotationY}deg)`
-    years[i].style.boxShadow = `inset 0px 1px 1px ${Math.abs(rotationX)*0.3}px rgba(255, 255, 255, 0.1)`
+    // years[i].style.boxShadow = `inset 0px 1px 1px ${Math.abs(rotationX)*0.3}px rgba(255, 255, 255, 0.1)`
   }
 
 }
