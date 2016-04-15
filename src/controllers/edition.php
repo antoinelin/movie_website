@@ -5,6 +5,8 @@ $title = 'edition '.$target_year;
 $class = 'edition';
 
 
+$data = $pdo->query("SELECT * from cannes WHERE year =".$target_year);
+$festival = $data->fetchAll();
 $data = $pdo->query("SELECT * from movies WHERE year =".$target_year);
 $movies = $data->fetchAll();
 
@@ -46,16 +48,18 @@ foreach ($movies as $movie) {
 
 }
 
+if($count_earning > 0){
+  $stats["earning_total"] =  round($stats["earning"]);
+  $stats["earning"] =  round($stats["earning"]/$count_earning);
+}
 
-$stats["earning_total"] =  round($stats["earning"]);
-$stats["earning"] =  round($stats["earning"]/$count_earning);
-
-$stats["duration_total"] =  round($stats["duration"]);
-$stats["duration"] =  round($stats["duration"]/$count_duration);
-
+if($count_duration > 0){
+  $stats["duration_total"] =  round($stats["duration"]);
+  $stats["duration"] =  round($stats["duration"]/$count_duration);
+}
 $stats["origins"] = count(array_count_values($stats["origins"]));
 $stats["genres_total"] = count(array_count_values($stats["genres_total"]));
 
 
-//echo "<pre>"; print_r($stats); echo "<pre>";
-//echo "<pre>"; print_r($festival); echo "<pre>";
+echo "<pre>"; print_r($stats); echo "<pre>";
+echo "<pre>"; print_r($festival); echo "<pre>";
