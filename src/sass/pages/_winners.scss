@@ -45,56 +45,20 @@ main.cd-winners{
 
   // WINNERS POSTERS
   section.winners-posters{
-	position: relative;
+		position: relative;
     height: 600px;
     width: 100%;
-	padding-left: 190px;
+		padding-left: 190px;
     overflow: scroll;
-
     a{
-    	position: relative;
 			margin: 35px;
 			display: inline-block;
-			text-decoration: none;
-	  	img{
-	      width: 200px;
+      img{
+        width: 200px;
 				height: 280px;
 				object-fit: contain;
-				transform: translate3d(0, 0, 0);
-				transition: all .3s ;
-	    }
-			div.film-name{
-				font-size: 20px;
-				font-family: $ProximaBold;
-				color: white;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				z-index: 50;
-				text-align: center;
-				opacity: 0;
-			}
-			&:hover div.film-name{
-				opacity: 1;
-			}
-			&:hover img{
-				-webkit-filter: blur(1px) brightness(50%);
-				filter: blur(1px) brightness(50%);
-				transform: scale(.95);
-			}
-	 		&.winner::after{
-	     	content:'';
-	     	position: absolute;
-	     	top: -5px;
-	     	left: -5px;
-	     	width: 58px;
-	     	height: 32px;
-	     	background: url('../img/palm-prize.png');
-	     	background-repeat: no-repeat;
-				background-size: cover;
-     	}
-	  }
+      }
+    }
 	}
 		// MOVIE SHEET
 	section.movie-sheet{
@@ -108,44 +72,40 @@ main.cd-winners{
 		min-width: 1200px;
 		height: 100%;
 		background-color: #EFEFEF;
+		padding-left: 33%;
+		padding-top: 5%;
 		margin-top: 190px;
-		div.description-container{
-			width: 1000px;
-			margin: 80px auto 0 auto;
-			div.big-poster{
-				display: inline-block;
-				vertical-align: top;
-				img{
-					width: 300px;
+		div.big-poster{
+			display: inline-block;
+			vertical-align: top;
+			img{
+				width: 300px;
+			}
+		}
+		div.description{
+			display: inline-block;
+			vertical-align: top;
+			width: 480px;
+			margin-left: 60px;
+			h2{
+				font-size: 52px;
+				color: #D0B02E;
+				font-family: $didot;
+			}
+			p{
+				font-size: 20px;
+				padding-top: 30px;
+				font-family: $ProximaRegu;
+			}
+			p.specs{
+				strong{
+					font-weight: bold;
 				}
 			}
-			div.description{
-				display: inline-block;
-				vertical-align: top;
-				width: 480px;
-				margin-left: 60px;
-				height: 450px;
-				overflow-y: scroll;
-				h2{
-					font-size: 52px;
-					color: #D0B02E;
-					font-family: $didot;
-				}
-				p{
-					font-size: 20px;
-					padding-top: 30px;
-					font-family: $ProximaRegu;
-				}
-				p.specs{
-					strong{
-						font-weight: bold;
-					}
-				}
-				h3.price{
-					padding-top: 30px;
-					font-size: 32px;
-					color: #D0B02E;
-				}
+			h3.price{
+				padding-top: 30px;
+				font-size: 32px;
+				color: #D0B02E;
 			}
 		}
 		a.go-back{
@@ -153,7 +113,8 @@ main.cd-winners{
 	    text-decoration: none;
 	    font-size: 24px;
 	    font-family: $ProximaRegu;
-	    top: 30px;
+			width: 20%;
+	    top: 10%;
 	    left: 50px;
 			transition: all .3s ease;
 	    	&:hover{
@@ -199,7 +160,7 @@ main.cd-winners{
     text-decoration: none;
     font-size: 24px;
     left: 70px;
-    bottom: 30px;
+    bottom: 70px;
     font-size: 24px;
     font-family: $ProximaRegu;
     &::before{
