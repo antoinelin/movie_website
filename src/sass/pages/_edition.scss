@@ -9,12 +9,11 @@
   #fullpage {
     .section {
       section {
-        border:2px solid red;
         height: 500px;
         width: 60%;
         display:flex;
         margin: auto;
-
+        background-color: $white;
         div:not(.text) {
           display:flex;
           align-items : center;
@@ -105,7 +104,89 @@
       left: 8%;
     }
   }
+<<<<<<< HEAD
+}
+
+.fp-tableCell{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fp-tableCell .chart-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 14vh;
+  transform: translateY(5vh);
+
+  .number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 0.2;
+  }
+}
+
+.fp-tableCell .chart-description{
+  .number{
+    p{
+      position: static;
+      width: auto;
+      transform: translateX(0);
+    }
+
+    p:first-of-type{
+      font-family: $ProximaBlack;
+      font-size: 45px;
+      color: $yellow;
+    }
+
+    p:nth-child(2){
+      font-family: $ProximaBlack;
+      font-size: 20px;
+      color: rgba(black,0.5);
+    }
+
+    p:last-of-type{
+      font-family: $ProximaBlack;
+      font-size: 20px;
+      color: rgba(black,0.5);
+    }
+  }
+
+  .text{
+    display: flex;
+    height: 100%;
+    flex: 0.7;
+
+    p{
+      transform: translate(7vw,-4vh);
+    }
+  }
+}
+
+
+.fp-tableCell{
+  canvas, iframe{
+    align-self: center;
+    margin: auto;
+  }
+
+  p{
+    transform: translateX(100px);
+    width: 80%;
+  }
+}
+
+.home_project-indicators {
+=======
   .home_project-indicators {
+>>>>>>> origin/master
     position: absolute;
     z-index: 1000;
     top: 50%;
@@ -135,6 +216,35 @@
       opacity: 0;
     }
   }
+<<<<<<< HEAD
+  span:after {
+    transform: translateX(30%) scaleX(1.625);
+    background: #CC4F4F;
+  }
+}
+.activeMenu:after{
+  transform: translateX(30%) scaleX(1.625);
+  background: #CC4F4F !important;
+}
+.activeText{
+  color: #CC4F4F !important;
+  opacity: 1 !important;
+}
+.dispMenu{
+  transform: translate(-600px, -50%);
+
+}
+.moviesCompetition{
+  position: relative;
+  a.moviesFlip{
+    font-family: $ProximaSemi;
+    color: #111;
+    float: right;
+    position: absolute;
+    right: 50px;
+    text-decoration: none;
+    transition: ease-out 500ms;
+=======
   .home_project-indicator {
     span:after {
       position: absolute;
@@ -148,6 +258,7 @@
       transition: transform 0.2s ease-out,background 0.3s ease-out;
       background: #111;
     }
+>>>>>>> origin/master
   }
   .home_project-indicator:hover {
     p {

@@ -54,8 +54,18 @@
 	width: 100px;
 	height: 60px;
 	font-size: 32px;
+<<<<<<< HEAD
 	font-family: $ProximaRegu;
+=======
+<<<<<<< HEAD
+	font-family: Didot;
+	transition: all 0.3s ease;
+	cursor: cursor;
+=======
+	font-family: $didot;
+>>>>>>> origin/master
 	transition: transform .3s , background-color .1s ease;
+>>>>>>> origin/master
 	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.1);
 
 }
