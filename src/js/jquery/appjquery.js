@@ -1,3 +1,5 @@
+import $ from 'jquery'
+import fullpage from '../vendors/jquery.fullpage'
 $(document).ready(function() {
     location.hash = '1';
     $('#fullpage').fullpage({
