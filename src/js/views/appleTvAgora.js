@@ -20,7 +20,6 @@ function appleTvAgora(event) {
         Math.pow(distanceX , 2) + Math.pow(distanceY, 2)
       )
     )
-    console.log(distanceX);
     if (Math.abs(distanceX) < 300)
       rotationY = .016 * distanceX * 4
     else if (Math.abs(distanceX) < 600){
@@ -46,5 +45,4 @@ function appleTvAgora(event) {
   }
 
 }
-
 export{appleTvAgora}
