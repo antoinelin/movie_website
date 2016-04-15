@@ -9,12 +9,11 @@
   #fullpage {
     .section {
       section {
-        border:2px solid red;
         height: 500px;
         width: 60%;
         display:flex;
         margin: auto;
-
+        background-color: $white;
         div:not(.text) {
           display:flex;
           align-items : center;
