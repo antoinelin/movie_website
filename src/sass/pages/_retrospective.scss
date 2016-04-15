@@ -1,0 +1,279 @@
+.cd-retrospective{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100vw;
+	height: 200vh;
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.cd-retrospective .main-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: auto;
+	max-width: 100%;
+}
+
+.cd-retrospective section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 85vw;
+	height: 100vh;
+	margin: 0;
+	/*border: thin solid red;*/
+}
+
+.cd-retrospective section .wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 85vw;
+	height: 90%;
+}
+
+.cd-retrospective section .informations-title{
+	width: 100%;
+	height: auto;
+}
+
+.cd-retrospective .informations-title h1{
+	font-size: 64px;
+	font-family: $ProximaBlack;
+	margin: 2.4vh 0 0 0;
+}
+
+.cd-retrospective .informations-container{
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cd-retrospective .informations{
+	width: 60%;
+	height: 25vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: -7vh;
+}
+
+@media only screen and (min-width: 1400px){
+	.cd-retrospective .informations{
+		margin-top: 0;
+	}
+
+	@media only screen and (min-width: 1400px){
+		.cd-retrospective .informations{
+			margin-top: 0;
+		}
+	}
+}
+
+.cd-retrospective .informations h2{
+	font-family: $ProximaBlack;
+	font-size: 84px;
+	margin-bottom: 5px;
+}
+
+.cd-retrospective .informations p{
+	font-family: $ProximaRegu;
+	font-size: 20px;
+	margin: 0;
+}
+
+.cd-retrospective .link-editions{
+	position: fixed;
+	display: block;
+	width: 100px;
+	left: 10vw;
+	bottom: 3vh;
+	transform: translateX(0);
+	text-decoration: none;
+	color: #F9F9F9;
+	font-family: $ProximaRegu;
+	font-size: 24px;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+
+.cd-retrospective .link-editions::after{
+	content: '';
+	position: absolute;
+	background-color: #f9f9f9;
+	left: -180px;
+	top: 50%;
+	height: 2px;
+	width: 120px;
+	transition: transform 0.1s ease;
+}
+
+.cd-retrospective .link-editions:hover{
+	transform: translateX(-30px);
+	transition: transform 0.3s ease;
+}
+
+.cd-retrospective .mouse-scroll{
+	position: relative;
+	top: 200px;
+	right: 450px;
+
+}
+
+/*
+ RETROSPECTIVE CHART
+*/
+
+.cd-retrospective .charts-content{
+	width: 85vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+}
+
+.cd-retrospective .charts-content{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cd-retrospective .charts-content header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex: 0.15;
+}
+
+.cd-retrospective .charts-content header div{
+	background-color: #111111;
+	color: #F9F9F9;
+	font-family: "Didot";
+	font-size: 60px;
+	margin: 0 30px;
+}
+
+.cd-retrospective .charts-content header input{
+	width: 6vw;
+	background-color: #111111;
+	color: #F9F9F9;
+	font-family: "Didot";
+	font-size: 40px;
+	border: none;
+	cursor: pointer;
+}
+
+.cd-retrospective .charts-content .chart{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0.65;
+	/*border: thin solid lime;*/
+}
+
+
+.cd-retrospective .charts-content .chartCanvas{
+	display: flex;
+	justify-content: center;
+	width: 80vw;
+	height: 65vh;
+	/*border: thin solid yellow;*/
+}
+
+.cd-retrospective .charts-content .chartButtons{
+	width: 10vw;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-self: center;
+	/*border: thin solid red;*/
+}
+.cd-retrospective .charts-content .chartButtons button{
+	width: 6vw;
+	height: 4vh;
+	background: transparent;
+	color: #F9F9F9;
+	font-family: "$ProximaRegu";
+	border-radius: 25px;
+	cursor: pointer;
+	border: thin solid white;
+}
+
+
+.cd-retrospective .charts-content .chart canvas,
+.cd-retrospective .charts-content .chart iframe{
+	width: 80%;
+	border: thin solid #F9F9F9;
+}
+
+.cd-retrospective .charts-content .description{
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-self: center;
+	flex: 0.2;
+	/*border: thin solid red;*/
+}
+
+.cd-retrospective .charts-content .description p{
+	width: 80%;
+	margin-top: 5%;
+	font-family: $ProximaRegu;
+	font-size: 20px;
+	text-align: justify;
+	/*border: thin solid lime;*/
+}
+
+/* SCROLL MOUSE*/
+
+.mouseContainer {
+  width: 24px; 
+  margin: 0 auto; 
+  text-align: center;
+  margin-top: 100px;
+}
+
+.mouseContainer .mouse {
+  border: 3px solid white;
+  width: 18px;
+  background-color: transparent;
+  height: 35px;
+  border-radius: 10px;
+}
+    
+.mouseContainer .wheel {
+  width: 1px;
+  height: 1px;
+  border: 2px solid white;
+  background-color: white;
+  position: relative;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -2px;
+  top: 7px; 
+  animation: scroll 2.2s infinite;
+}
+
+@keyframes scroll {
+  0%   { transform: translateY(6px); opacity: 0; transform: translateZ(0);}
+  50% { opacity: 1; }
+  100% {transform: translateY(10px); opacity: 0;}
+}

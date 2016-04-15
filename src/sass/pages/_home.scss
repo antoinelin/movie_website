@@ -1,0 +1,121 @@
+
+
+//HOME
+
+.cd-index .border{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+.cd-index .border:nth-child(1){
+  left: 0;
+  top: 0;
+  border-top: 2px solid #EEE;
+  border-left: 2px solid #EEE;
+}
+
+.cd-index .border:nth-child(2){
+  right: 0;
+  top: 0;
+  border-top: 2px solid #EEE;
+  border-right: 2px solid #EEE;
+}
+
+.cd-index .border:nth-child(3){
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid #EEE;
+  border-right: 2px solid #EEE;
+}
+
+.cd-index .border:nth-child(4){
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid #EEE;
+  border-left: 2px solid #EEE;
+}
+
+.cd-index .content-block{
+  position: relative;
+  width: 80%;
+  top: 30%;
+  left: 20%;
+  height: 400px;
+}
+
+.cd-index .content-block .main-logo{
+  opacity: 1;
+  transform: translateY(0px) translateZ(0);
+}
+
+.cd-index .content-block h1{
+  position: absolute;
+  top: 0;
+  left: 75px;
+  font-family: $didot;
+  width: 50px;
+  font-size: 60px;
+  color: #F9F9F9;
+}
+
+.cd-index .content-block h1>span{
+  font-family: $ProximaBlack;
+}
+
+.cd-index .content-block p{
+  position: absolute;
+  top: 140px;
+  left: 0px;
+  font-family: $ProximaRegu;
+  width: 80%;
+  font-size: 20px;
+  color: #f9f9f9;
+}
+
+
+.cd-index .main-content .cta{
+  position: absolute;
+  margin-left: calc(50% - 70px);
+  bottom: 30px;
+  bottom: 10%;
+  font-family: $ProximaRegu;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cd-index .main-content .cta a{
+  padding: 10px 20px;
+  color: #f9f9f9; 
+  position: relative;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.cd-index .main-content .cta::after{
+  content: '';
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 12vh;
+  width: 2px;
+  height: 8vh;
+  background-color: #F9F9F9;
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+.cd-index .main-content .cta:hover{
+  color: #CCCCCC;
+}
+
+.cd-index .main-content .cta:hover a{
+  transform: translateY(10px) translateZ(0);
+}
+
+.cd-index .main-content .cta:hover::after{
+  transform: translateY(30px) translateZ(0);
+}
+

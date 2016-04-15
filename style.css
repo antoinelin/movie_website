@@ -1,0 +1,705 @@
+@charset "UTF-8";
+/**
+ * Léo Le Bras
+ * http://leolebras.com/
+ *
+ * Work with Sass
+ * http://sass-lang.com/
+ *
+ * Copyright 2012 - 2015
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ * Date of creation : 2012-09-05
+ * Last updated: 2015-20-11
+ */
+/**
+ * respond-to
+ *
+ * @param {string} || {int} $breakpoint
+ * @return {css}
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+@font-face {
+    font-family: "Didot";
+  src: url("../fonts/Didot/Didot.woff") format("woff"), url("../fonts/Didot/Didot.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "proximanova-black-webfont";
+  font-style: bolder;
+  font-weight: 900;
+  src: url("../fonts/ProximaNova/proximanova-black-webfont.woff2") format("woff2"), url("../fonts/ProximaNova/proximanova-black-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "proximanova-bold-webfont";
+  font-style: bold;
+  font-weight: 800;
+  src: url("../fonts/ProximaNova/proximanova-bold-webfont.woff2") format("woff2"), url("../fonts/ProximaNova/proximanova-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "proximanova-light-webfont";
+  font-style: lighter;
+  font-weight: 200;
+  src: url("../fonts/ProximaNova/proximanova-light-webfont.woff2") format("woff2"), url("../fonts/ProximaNova/proximanova-light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "proximanova-semibold-webfont";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/ProximaNova/proximanova-semibold-webfont.woff2") format("woff2"), url("../fonts/ProximaNova/proximanova-semibold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "proximanova-regular-webfont";
+  font-style: light;
+  font-weight: 400;
+  src: url("../fonts/ProximaNova/proximanova-regular-webfont.woff2") format("woff2"), url("../fonts/ProximaNova/proximanova-regular-webfont.woff") format("woff");
+}
+
+/**
+ * strip-units
+ *
+ * @param {string} $number
+ * @return {int}
+ */
+/**
+ * image-url()
+ *
+ * @param {string} $file
+ * @return relative path
+ */
+/* * Add your helpers * */
+body {
+    background-color: #f2f2f2;
+}
+
+/*
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+  Personal additions :
+*/
+body {
+    text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+article, aside, div, footer, header,
+nav, section {
+    box-sizing: border-box;
+}
+
+input, button, textarea, select {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    line-height: 1em;
+    outline: none;
+    appearance: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-end: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-after: 0;
+    -webkit-padding-start: 0;
+}
+
+a {
+    color: inherit;
+    outline: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Didot';
+}
+
+header {
+    font-family: "proximanova-black-webfont";
+}
+
+body {
+    line-height: 'Arial';
+}
+
+/**
+ * Headings
+ *
+ */
+/**
+ * Content text
+ *
+ */
+/**
+ * <form> component style
+ *
+ */
+/**
+ * Button styles
+ *
+ */
+/**
+ * Default component style
+ *
+ */
+.titre a {
+    margin-left: 200px;
+    text-decoration: none;
+    font-family: "proximanova-bold-webfont";
+    font-size: 3em;
+}
+
+.titre a:hover {
+    color: gold;
+}
+
+/*!
+ * fullPage 2.7.9
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html.fp-enabled,
+.fp-enabled body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+#superContainer {
+    height: 100%;
+    position: relative;
+  /* Touch detection for Windows 8 */
+  /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+
+.fp-section {
+    position: relative;
+  /* Safari<=5 Android<=3 */
+  /* <=28 */
+    box-sizing: border-box;
+}
+
+.fp-slide {
+    float: left;
+}
+
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+
+.fp-slides {
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+
+.fp-controlArrow {
+    -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+    -moz-user-select: none;
+  /* mozilla browsers */
+    -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+    -ms-user-select: none;
+  /* IE10+ */
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    transform: translate3d(0, 0, 0);
+}
+
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.fp-scrollable {
+    overflow: scroll;
+}
+
+.fp-notransition {
+    transition: none !important;
+}
+
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+#fp-nav.right {
+    right: 17px;
+}
+
+#fp-nav.left {
+    left: 17px;
+}
+
+.fp-slidesNav {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+
+.fp-slidesNav.top {
+    top: 17px;
+}
+
+#fp-nav ul,
+.fp-slidesNav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position: relative;
+}
+
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #333;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    transition: all 0.1s ease-in-out;
+}
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+}
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}
+
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell {
+    height: auto !important;
+}
+
+/*
+  Responsive
+*/
+/* ( rem => px
+    'small'        : 530px,
+    'medium'       : 768px,
+    'normal'       : 980px,
+    'large'        : 1200px,
+    'huge'         : 1400px,
+    'massive'      : 1600px
+) */
+/*
+  Font
+*/
+/*
+  toggleClass
+*/
+.home_project-indicators {
+    position: absolute;
+    z-index: 1000;
+    top: 75%;
+    transform: translateY(-50%);
+    list-style: none;
+}
+
+.home_project-indicators li {
+    position: relative;
+    box-sizing: content-box;
+    width: 100px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.home_project-indicator:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 2px;
+    content: '';
+    transition: background .3s ease-out;
+    transition: transform .2s ease-out,background .3s ease-out;
+    transition: transform .2s ease-out,background .3s ease-out;
+    background: #111;
+}
+
+.home_project-indicator:hover:after {
+    transform: translateX(30%) scaleX(1.625);
+    background: #0760fe;
+}
+
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+main.cd-winners {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #F9F9F9;
+}
+
+main.cd-winners header {
+    height: 190px;
+    width: 100%;
+    padding-top: 75px;
+    padding-left: 180px;
+}
+
+main.cd-winners header h1 {
+    display: inline-block;
+    font-size: 52px;
+    color: #D0B02E;
+    font-family: 'didot';
+}
+
+main.cd-winners header p {
+    position: relative;
+    display: inline-block;
+    width: 570px;
+    font-size: 20px;
+    font-family: ProximaRegular;
+}
+
+main.cd-winners header p::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 36px;
+    height: 2px;
+    top: 50%;
+    left: -110px;
+}
+
+main.cd-winners section.winners-posters {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    padding-left: 190px;
+    overflow: scroll;
+}
+
+main.cd-winners section.winners-posters a {
+    margin: 35px;
+    display: inline-block;
+}
+
+main.cd-winners section.winners-posters a img {
+    width: 120px;
+}
+
+main.cd-winners section.winners-posters div.movie-sheet {
+    transform: translateX(0%);
+    transition: transform .5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EFEFEF;
+    padding-left: 360px;
+    padding-top: 120px;
+}
+
+main.cd-winners section.winners-posters div.movie-sheet div.big-poster {
+    display: inline-block;
+    vertical-align: top;
+}
+
+main.cd-winners section.winners-posters div.movie-sheet div.big-poster img {
+    width: 300;
+}
+
+main.cd-winners section.winners-posters div.movie-sheet div.description {
+    display: inline-block;
+    vertical-align: top;
+    width: 480px;
+    margin-left: 60px;
+}
+
+main.cd-winners section.winners-posters div.movie-sheet div.description h2 {
+    font-size: 52px;
+    color: #D0B02E;
+    font-family: 'didot';
+}
+
+main.cd-winners section.winners-posters div.movie-sheet div.description p {
+    font-size: 20px;
+    padding-top: 30px;
+    font-family: 'ProximaRegular';
+}
+
+main.cd-winners section.winners-posters div.movie-sheet div.description p.specs strong {
+    font-weight: bold;
+}
+
+main.cd-winners section.winners-posters div.movie-sheet div.description h3.price {
+    font-size: 32;
+}
+
+main.cd-winners a.all-years {
+    position: absolute;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: ProximaRegular;
+    top: 80px;
+    right: 60px;
+}
+
+main.cd-winners a.all-years::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 2px;
+    height: 70px;
+    left: 50%;
+    top: -80px;
+}
+
+main.cd-winners a.current-year {
+    position: absolute;
+    text-decoration: none;
+    font-size: 24px;
+    left: 70px;
+    bottom: 70px;
+    font-size: 24px;
+    font-family: ProximaRegular;
+}
+
+main.cd-winners a.current-year::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 2px;
+    top: 50%;
+    left: -70px;
+}
+
+.years {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 100px auto auto auto;
+    background-color: #111;
+}
+
+.years .year {
+    position: relative;
+    width: 150px;
+    height: 70px;
+    margin: 5px;
+    transform-style: preserve-3d;
+    background-color: #0A0A0A;
+    box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1);
+    transform: translate3d(0, 0, 0);
+    transition: background-color .3s, transform .1s;
+    color: white;
+    backface-visibility: hidden;
+}
+
+.years .year:hover {
+    background-color: #d1be12;
+}
+
+.years .year p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 30px;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=style.css.map */

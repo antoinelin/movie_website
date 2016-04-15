@@ -1,0 +1,176 @@
+body{
+	width: 100vw;
+	height: 100vh;
+}
+
+
+main.cd-winners{
+  	display: block;
+  	position: relative;
+	width:100%;
+  	height: 100%;
+	background-color: #F9F9F9;
+	color: black;
+	overflow: hidden;
+
+  // HEADER
+  header{
+    height: 190px;
+    width: 100%;
+    padding-top: 75px;
+    padding-left: 180px;
+    h1{
+      display: inline-block;
+      font-size: 52px;
+      color: #D0B02E;
+      font-family: $didot;
+    }
+    p{
+      position: relative;
+      display: inline-block;
+      width: 570px;
+      font-size: 20px;
+      font-family: $ProximaRegu;
+      &::before{
+        content: '';
+        position: absolute;
+        background-color: black;
+        width: 36px;
+        height: 2px;
+        top: 50%;
+        left: -110px;
+      }
+    }
+  }
+
+  // WINNERS POSTERS
+  section.winners-posters{
+		position: relative;
+    height: 600px;
+    width: 100%;
+		padding-left: 190px;
+    overflow: scroll;
+    a{
+			margin: 35px;
+			display: inline-block;
+      img{
+        width: 200px;
+				height: 280px;
+				object-fit: contain;
+      }
+    }
+	}
+		// MOVIE SHEET
+	section.movie-sheet{
+		// display: none;
+		transform: translate3d(0, 0, 0) translateX(100%);
+		transition: transform .5s ease;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		min-width: 1200px;
+		height: 100%;
+		background-color: #EFEFEF;
+		padding-left: 33%;
+		padding-top: 5%;
+		margin-top: 190px;
+		div.big-poster{
+			display: inline-block;
+			vertical-align: top;
+			img{
+				width: 300px;
+			}
+		}
+		div.description{
+			display: inline-block;
+			vertical-align: top;
+			width: 480px;
+			margin-left: 60px;
+			h2{
+				font-size: 52px;
+				color: #D0B02E;
+				font-family: $didot;
+			}
+			p{
+				font-size: 20px;
+				padding-top: 30px;
+				font-family: $ProximaRegu;
+			}
+			p.specs{
+				strong{
+					font-weight: bold;
+				}
+			}
+			h3.price{
+				padding-top: 30px;
+				font-size: 32px;
+				color: #D0B02E;
+			}
+		}
+		a.go-back{
+			position: absolute;
+	    text-decoration: none;
+	    font-size: 24px;
+	    font-family: $ProximaRegu;
+			width: 20%;
+	    top: 10%;
+	    left: 50px;
+			transition: all .3s ease;
+	    	&:hover{
+    		transform: translateX(30px) translateZ(0);
+	    	}
+			&::before{
+				content: '';
+	      position: absolute;
+	      background-color: black;
+	      width: 30px;
+	      height: 2px;
+	      top: 50%;
+	      left: -50px;
+			}
+		}
+	}
+
+  // NAVIGATION BUTTONS ABSOLUTE
+  a.all-years{
+    position: absolute;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: $ProximaRegu;
+    top: 80px;
+    right: 60px;
+    &::before{
+      content: '';
+      position: absolute;
+      background-color: black;
+      width: 2px;
+      height: 70px;
+      left: 50%;
+      top: -80px;
+			transition: all .3s ease;
+
+    }
+		&:hover::before{
+			transform: translateY(-20px) translateZ(0);
+		}
+  }
+  a.current-year{
+    position: absolute;
+    text-decoration: none;
+    font-size: 24px;
+    left: 70px;
+    bottom: 70px;
+    font-size: 24px;
+    font-family: $ProximaRegu;
+    &::before{
+      content: '';
+      position: absolute;
+      background-color: black;
+      width: 70px;
+      height: 2px;
+      top: 50%;
+      left: -70px;
+    }
+  }
+}
