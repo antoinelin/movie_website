@@ -1,3 +1,7 @@
+#myMenu{
+  transition: ease-out 400ms;
+  position: absolute;
+}
 .home_project-indicators {
     position: absolute;
     z-index: 1000;
@@ -61,5 +65,60 @@
   opacity: 1 !important;
 }
 .dispMenu{
-  display: none;
+  transform: translate(-600px, -50%);
+
+}
+.moviesCompetition{
+  overflow-x: hidden;
+  a.moviesFlip{
+    font-family: $ProximaSemi;
+    color: #111;
+    float: right;
+    position: relative;
+    right: 50px;
+    text-decoration: none;
+    transition: ease-out 800ms;
+  }
+  a.moviesFlip:after{
+    position: absolute;
+    top: 15%;
+    transform: translateX(100px);
+    display: block;
+    width: 55px;
+    height: 2px;
+    content: '';
+    background: #111;
+
+  }
+  a.moviesFlip:hover{
+    transform: translateX(30px);
+
+  }
+}
+.hoverviewFlip{
+  overflow-x: hidden;
+  a.hoverviewFlip{
+    font-family: $ProximaSemi;
+    color: #111;
+    float: right;
+    position: relative;
+    right: 50px;
+    text-decoration: none;
+    transition: ease-out 800ms;
+  }
+  a.hoverviewFlip:after{
+    position: absolute;
+    top: 15%;
+    transform: translateX(100px);
+    display: block;
+    width: 55px;
+    height: 2px;
+    content: '';
+    background: #111;
+
+  }
+  a.hoverviewFlip:hover{
+    transform: translateX(30px);
+
+  }
 }

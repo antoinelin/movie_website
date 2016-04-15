@@ -38,7 +38,7 @@ $(document).ready(function() {
         controlArrows: false,
         verticalCentered: true,
         resize : false,
-        sectionsColor : ['#fefefe', '#111111'],
+        sectionsColor : ['#fefefe', '#fefefe', '#fefefe', '#fefefe', '#fefefe', '#fefefe'],
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
@@ -98,15 +98,17 @@ $(document).ready(function() {
               $('.spanMenu6').addClass('activeText');
           }
         },
-        onSlideLeave: function( anchorLink, index, slideIndex){
-          if(index == 1 && slideIndex == 1){
-            console.log('yo');
-          }
-        },
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+          if(index == 1 && slideIndex == 0){
+            $('#myMenu').addClass('dispMenu');
+          }
+          if(index == 1 && slideIndex == 1){
+            $('#myMenu').removeClass('dispMenu');
+          }
+        }
     });
 });
