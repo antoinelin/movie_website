@@ -8,8 +8,10 @@ function drawNewChart(datas){
     let contexts = new Array()
 
     for (let i = 0; i < canvas; i++) {
-      let ctx = $('.chart')[i]
-      contexts[i] = ctx.getContext("2d")
+      // let ctx = $('.chart')[i]
+      let ctx = document.querySelectorAll('canvas')
+      console.log(ctx);
+      contexts[i] = ctx[i].getContext("2d")
     }
 
     return contexts

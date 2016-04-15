@@ -37,6 +37,7 @@
 	flex-direction: row;
 	align-content: flex-start;
 	flex-wrap: wrap;
+	height: 70vh;
 }
 
 .cd-editions h1{
@@ -48,27 +49,24 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 120px;
-	height: 70px;
+	background-color: #0a0a0a;
+	color: #D0B02E;
+	width: 100px;
+	height: 60px;
 	font-size: 32px;
-	font-family: Didot;
-	transition: all 0.3s ease;
+	font-family: $didot;
+	transition: transform .3s , background-color .1s ease;
+	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.1);
 
 }
 
 .cd-editions .content-block .edition a{
 	text-decoration: none;
-	background-color: #0a0a0a;
-	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.1);
-	padding: 20px 30px;
-	text-align: center;
-	line-height: 32px;
-	color: #D0B02E;
 	transition: all 0.3s ease;
 }
 
 
-.cd-editions .content-block .edition a:hover{
+.cd-editions .content-block .edition:hover{
 	background-color: #D0B02E;
 	color: #0a0a0a;
 }

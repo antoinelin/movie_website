@@ -16,8 +16,7 @@
 
 
 
-
-  <div id="fullpage" class="fp_background">
+  <div id="fullpage" class="fp_background" data-year="<?= $festival[0]->year ?>">
     <div class="section first_one">
       <div class="slide moviesCompetition" data-anchor="hoverview">
         <a class="moviesFlip" href="#1/films_slide">MOVIES IN</br>COMPETITION</a>
@@ -58,10 +57,10 @@
           </div>
         </section>
       </div>
-
     </div>
     <div class="section second_one">
       <h2 class="title_section"><span><?= $festival[0]->year ?></span></h2>
+      <canvas class="canvas" width="800" height="450"></canvas>
     </div>
     <div class="section third_one">
       <h2 class="title_section"><span><?= $festival[0]->year ?></span></h2>
@@ -71,9 +70,12 @@
     </div>
     <div class="section fifth_one">
       <h2 class="title_section"><span><?= $festival[0]->year ?></span></h2>
+      <canvas class="canvas" width="800" height="450"></canvas>
+
     </div>
     <div class="section last_one">
       <h2 class="title_section"><span><?= $festival[0]->year ?></span></h2>
+      <canvas class="canvas" width="800" height="450"></canvas>
     </div>
   </div>
 </main>
