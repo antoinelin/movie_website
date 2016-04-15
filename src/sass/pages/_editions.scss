@@ -12,7 +12,6 @@
 	width: 85vw;
 	height: 85vh;
 	color: #f9f9f9;
-	overflow: scroll;
 }
 
 .cd-editions .main-content .content-block{
@@ -53,17 +52,23 @@
 	background-color: #0a0a0a;
 	color: #D0B02E;
 	width: 100px;
-	height: 70px;
+	height: 60px;
 	font-size: 32px;
+<<<<<<< HEAD
 	font-family: Didot;
 	transition: all 0.3s ease;
 	cursor: cursor;
+=======
+	font-family: $didot;
+	transition: transform .3s , background-color .1s ease;
+>>>>>>> origin/master
 	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.1);
 
 }
 
 .cd-editions .content-block .edition a{
 	text-decoration: none;
+	transition: all 0.3s ease;
 }
 
 

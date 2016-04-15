@@ -79,7 +79,7 @@
   margin-left: calc(50% - 70px);
   bottom: 30px;
   bottom: 10%;
-  font-family: $ProximaRegu;
+  font-family: $ProximaSemi;
   font-size: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -87,7 +87,7 @@
 
 .cd-index .main-content .cta a{
   padding: 10px 20px;
-  color: #f9f9f9; 
+  color: #f9f9f9;
   position: relative;
   text-decoration: none;
   display: block;
@@ -118,4 +118,13 @@
 .cd-index .main-content .cta:hover::after{
   transform: translateY(30px) translateZ(0);
 }
+.creditLink{
+  font-family: $ProximaSemi;
+  font-size: 24px;
+  color: #F9F9F9;
+  position: absolute;
+  top: 96%;
+  right: 1%;
+  text-decoration: none;
 
+}

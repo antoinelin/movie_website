@@ -8,7 +8,7 @@
 			<img class="main-logo" src="img/logotype_palm.png" alt="logo" width="70">
 			<h1>Cannes <br><span>Retrospective</span></h1>
 			<p class="main-description">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia fuga nobis reprehenderit nulla modi voluptas.
+				In order to celebrate the 69th edition of the mythic Festival located in the French Riviera, Cannes Retrospective explores the 7th Art History since 1946.
 			</p>
 		</div>
 		<div class="cta-container">
@@ -18,5 +18,10 @@
 				</a>
 			</div>
 		</div>
+
 	</div>
+  <a href="<?= URL?>credit" class="creditLink">
+    <img src="../img/Group51.png" alt="credit" />
+
+  </a>
 </main>
