@@ -54,7 +54,7 @@
 	width: 100px;
 	height: 70px;
 	font-size: 32px;
-	font-family: Didot;
+	font-family: $ProximaRegu;
 	transition: all 0.3s ease;
 	cursor: cursor;
 	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.1);
@@ -69,34 +69,4 @@
 .cd-editions .content-block .edition:hover{
 	background-color: #D0B02E;
 	color: #0a0a0a;
-}
-
-.cd-editions .link-retrospective{
-	position: absolute;
-	display: block;
-	width: 100px;
-	right: 5vw;
-	transform: translateX(0);
-	text-decoration: none;
-	color: #F9F9F9;
-	font-family: $ProximaRegu;
-	font-size: 24px;
-	text-transform: uppercase;
-	transition: all 0.3s  ease;
-}
-
-.cd-editions .link-retrospective::after{
-	content: '';
-	position: absolute;
-	background-color: #f9f9f9;
-	right: -240px;
-	top: 50%;
-	height: 2px;
-	width: 120px;
-	transition: transform 0.1s ease;
-}
-
-.cd-editions .link-retrospective:hover{
-	transform: translateX(30px);
-	transition: transform 0.3s ease;
 }
