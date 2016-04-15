@@ -29,12 +29,11 @@ foreach ($movies as $movie) {
   //average earnings
   if(isset($movie->budget) && isset($movie->revenue) && $movie->revenue > 0 && $movie->budget > 0){
     $stats["earning"] += intval($movie->revenue) - intval($movie->budget);
-    $stats["budget_total"] += intval($movie->budget);
+    $stats["budget_total"] += round(intval($movie->budget)/1000000);
     $count_earning++;
   }
   //total origins
   if(empty($movie->country)){
-    $movie->country = "NC";
   }
   $stats["origins"][] =  $movie->country;
 
@@ -49,18 +48,12 @@ foreach ($movies as $movie) {
 }
 
 if($count_earning > 0){
-  $stats["earning_total"] =  round($stats["earning"]);
-  $stats["earning"] =  round($stats["earning"]/$count_earning);
 }
 
 if($count_duration > 0){
   $stats["duration_total"] =  round($stats["duration"]);
   $stats["duration"] =  round($stats["duration"]/$count_duration);
 }
-$stats["origins"] = count(array_count_values($stats["origins"]));
-$stats["genres_total"] = count(array_count_values($stats["genres_total"]));
+  }
+  }
 
-//
-// echo "<pre>"; print_r($stats); echo "<pre>";
-// echo "<pre>"; print_r($festival); echo "<pre>";
-//echo "<pre>"; print_r($stats); echo "<pre>";
