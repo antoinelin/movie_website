@@ -2,6 +2,35 @@
   transition: ease-out 400ms;
   position: absolute;
 }
+.first_one, .second_one, .third_one, .fourth_one, .fifth_one, .last_one{
+  background: url("../img/bg-opacity.png") center top repeat;
+  h2.title_section{
+    font-family: $didot;
+    font-size: 3em;
+    color: #D0B02E;
+    position: absolute;
+    top: 6vh;
+    left: 5%;
+    span:after{
+      position: absolute;
+      top: 40%;
+      transform: translateX(-70px);
+      display: block;
+      width: 55px;
+      height: 2px;
+      content: '';
+      background: #111;
+    }
+  }
+  p{
+    font-family: $ProximaRegu;
+    font-size: 20px;
+    color: #111;
+    position: absolute;
+    top: 6.25vh;
+    left: 8%;
+  }
+}
 .home_project-indicators {
     position: absolute;
     z-index: 1000;
@@ -92,6 +121,32 @@
   a.moviesFlip:hover{
     transform: translateX(30px);
 
+  }
+  h2{
+    font-family: $didot;
+    font-size: 3em;
+    color: #D0B02E;
+    position: absolute;
+    top: 6vh;
+    left: 5%;
+  }
+  p{
+    font-family: $ProximaRegu;
+    font-size: 20px;
+    color: #111;
+    position: absolute;
+    top: 6.25vh;
+    left: 8%;
+  }
+  span:after{
+    position: absolute;
+    top: 40%;
+    transform: translateX(-70px);
+    display: block;
+    width: 55px;
+    height: 2px;
+    content: '';
+    background: #111;
   }
 }
 .hoverview{

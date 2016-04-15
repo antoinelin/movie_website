@@ -7,19 +7,31 @@
     <a href="#5"><li data-menuanchor="5" class="home_project-indicator"><span class="spanMenu5"></span><p class="spanMenu5">ORIGINS</p></li></a>
     <a href="#6"><li data-menuanchor="6" class="home_project-indicator"><span class="spanMenu6"></span><p class="spanMenu6">CATEGORIES</p></li></a>
   </ul>
-  <div id="fullpage">
+  <div id="fullpage" class="fp_background">
       <div class="section first_one">
         <div class="slide moviesCompetition" data-anchor="hoverview">
           <a class="moviesFlip" href="#1/films_slide">MOVIES IN</br>COMPETITION</a>
+          <h2 class="title_section"><span>2005</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</br>Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
         </div>
         <div class="slide hoverview" data-anchor="films_slide">
           <a class="hoverviewFlip" href="#1/hoverview">STATS</a>
         </div>
       </div>
-      <div class="section"></div>
-      <div class="section"></div>
-      <div class="section"></div>
-      <div class="section"></div>
-      <div class="section"></div>
+      <div class="section second_one">
+        <h2 class="title_section"><span>2005</span></h2>
+      </div>
+      <div class="section third_one">
+        <h2 class="title_section"><span>2005</span></h2>
+      </div>
+      <div class="section fourth_one">
+        <h2 class="title_section"><span>2005</span></h2>
+      </div>
+      <div class="section fifth_one">
+        <h2 class="title_section"><span>2005</span></h2>
+      </div>
+      <div class="section last_one">
+        <h2 class="title_section"><span>2005</span></h2>
+      </div>
   </div>
 </main>
