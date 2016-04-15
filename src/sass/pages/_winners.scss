@@ -63,11 +63,13 @@ main.cd-winners{
 	 	&.winner::after{
 	     	content:'';
 	     	position: absolute;
-	     	bottom: 0;
-	     	right: 0;
-	     	width: 100px;
-	     	height: 100px;
-	     	background: '../img/palm-prize.png';
+	     	top: -5px;
+	     	left: -5px;
+	     	width: 58px;
+	     	height: 32px;
+	     	background: url('../img/palm-prize.png');
+	     	background-repeat: no-repeat;
+			background-size: cover;
      		}
 	    }
 	}
