@@ -19,7 +19,7 @@ window.onload= ()=>{
 
   //Trigger animations on movies page
 	if(checkPatternPath('winners', hostname)){
-    
+
     let winnersPosters = document.querySelectorAll("section.winners-posters a")
     for(var i = 0; i < winnersPosters.length; i++){
       winnersPosters[i].addEventListener('click', showMovieSheet)
@@ -37,8 +37,8 @@ window.onload= ()=>{
       //Get datas from API
       getDataFromDB(year)
       .then(response => {
-        drawNewChart(response)
-        console.log(response)
+				console.log(response)
+				drawNewChart(response)
       })
       .catch(err => {
         console.log(err)
@@ -58,4 +58,4 @@ window.onload= ()=>{
 	}
 
 };
-export { years }
+// export { years }

@@ -7,7 +7,7 @@
     <a href="#5"><li data-menuanchor="5" class="home_project-indicator"><span class="spanMenu5"></span><p class="spanMenu5">ORIGINS</p></li></a>
     <a href="#6"><li data-menuanchor="6" class="home_project-indicator"><span class="spanMenu6"></span><p class="spanMenu6">CATEGORIES</p></li></a>
   </ul>
-  <div id="fullpage" class="fp_background">
+  <div id="fullpage" class="fp_background" data-year="2005">
       <div class="section first_one">
         <div class="slide moviesCompetition" data-anchor="hoverview">
           <a class="moviesFlip" href="#1/films_slide">MOVIES IN</br>COMPETITION</a>
@@ -20,6 +20,8 @@
       </div>
       <div class="section second_one">
         <h2 class="title_section"><span>2005</span></h2>
+        <h1><span>Yo</span></h1>
+          <canvas class="canvas" width="800" height="450"></canvas>
       </div>
       <div class="section third_one">
         <h2 class="title_section"><span>2005</span></h2>
@@ -29,9 +31,11 @@
       </div>
       <div class="section fifth_one">
         <h2 class="title_section"><span>2005</span></h2>
+        <canvas class="canvas" width="800" height="450"></canvas>
       </div>
       <div class="section last_one">
         <h2 class="title_section"><span>2005</span></h2>
+        <canvas class="canvas" width="800" height="450"></canvas>
       </div>
   </div>
 </main>
