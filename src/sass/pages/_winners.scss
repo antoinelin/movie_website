@@ -80,6 +80,7 @@ main.cd-winners{
 			}
 			&:hover img{
 				-webkit-filter: blur(1px) brightness(50%);
+				filter: blur(1px) brightness(50%);
 				transform: scale(.95);
 			}
 	 		&.winner::after{
