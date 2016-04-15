@@ -12,9 +12,6 @@
           <h2 class="title_section"><span>2005</span></h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
         </div>
-        <div class="slide hoverview" data-anchor="films_slide">
-          <a class="hoverviewFlip" href="#1/hoverview">STATS</a>
-        </div>
       </div>
       <div class="section second_one" id="second_one">
         <h2 class="title_section"><span>2005</span></h2>
