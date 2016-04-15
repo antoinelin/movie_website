@@ -150,24 +150,25 @@ main.cd-winners{
 		}
 		a.go-back{
 			position: absolute;
-	    text-decoration: none;
-	    font-size: 24px;
-	    font-family: $ProximaRegu;
-	    top: 30px;
-	    left: 50px;
-			transition: all .3s ease;
-	    	&:hover{
-    		transform: translateX(30px) translateZ(0);
-	    	}
+	    	text-decoration: none;
+	    	font-size: 24px;
+	    	font-family: $ProximaRegu;
+	    	top: 30px;
+	    	left: 50px;
+			
 			&::before{
 				content: '';
-	      position: absolute;
-	      background-color: black;
-	      width: 30px;
-	      height: 2px;
-	      top: 50%;
-	      left: -50px;
+	      		position: absolute;
+	      		background-color: black;
+	      		width: 30px;
+	      		height: 2px;
+	      		top: 50%;
+	      		left: -50px;
+  				transition: all .3s ease;
 			}
+    		&:hover::before{
+				transform: translateX(10px) translateZ(0);
+    		}
 		}
 	}
 
@@ -210,6 +211,10 @@ main.cd-winners{
       height: 2px;
       top: 50%;
       left: -70px;
+      transition: 0.3s all ease;
+    }
+    &:hover::before{
+    	transform: translateX(-30px) translateZ(0);
     }
   }
 }
