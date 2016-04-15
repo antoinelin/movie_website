@@ -60,12 +60,7 @@ if($count_duration > 0){
 $stats["origins"] = count(array_count_values($stats["origins"]));
 $stats["genres_total"] = count(array_count_values($stats["genres_total"]));
 
-<<<<<<< HEAD
-// 
+//
 // echo "<pre>"; print_r($stats); echo "<pre>";
 // echo "<pre>"; print_r($festival); echo "<pre>";
-=======
-
 //echo "<pre>"; print_r($stats); echo "<pre>";
-//echo "<pre>"; print_r($festival); echo "<pre>";
->>>>>>> origin/master
