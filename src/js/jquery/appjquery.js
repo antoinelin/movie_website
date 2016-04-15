@@ -8,7 +8,7 @@ $(document).ready(function() {
         navigationPosition: 'left',
         navigationTooltips: ['1', '2', '3', '4', '5', '6'],
         showActiveTooltip: false,
-        slidesNavigation: true,
+        slidesNavigation: false,
         slidesNavPosition: 'bottom',
 
         //Scrolling
@@ -105,9 +105,16 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
           if(index == 1 && slideIndex == 0){
             $('#myMenu').addClass('dispMenu');
+            $('.moviesFlip').addClass('dispLink');
+            $('.hoverviewFlip').removeClass('dispLink');
+
+
           }
           if(index == 1 && slideIndex == 1){
             $('#myMenu').removeClass('dispMenu');
+
+            $('.hoverviewFlip').addClass('dispLink');
+            $('.moviesFlip').removeClass('dispLink');
           }
         }
     });
