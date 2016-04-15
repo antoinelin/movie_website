@@ -7,7 +7,12 @@
   <section class="winners-posters">
     <?php
       for ($i= 0; $i < count($movies) ; $i++) {
-          echo '<a data-attribute-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/></a> ';
+          if($i == 0){
+            echo '<a class="winner" data-attribute-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/></a> ';
+          }
+          else {
+            echo '<a data-attribute-name="'.trim($movies[$i]).' " href="#"><img src="'.$posters[$movies[$i]].'" class="winner-poster"/></a> ';
+          }
       }
     ?>
   </section>

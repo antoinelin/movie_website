@@ -45,20 +45,31 @@ main.cd-winners{
 
   // WINNERS POSTERS
   section.winners-posters{
-		position: relative;
+	position: relative;
     height: 600px;
     width: 100%;
-		padding-left: 190px;
+	padding-left: 190px;
     overflow: scroll;
+
     a{
+    		position: relative;
 			margin: 35px;
 			display: inline-block;
-      img{
-        width: 200px;
-				height: 280px;
-				object-fit: contain;
-      }
-    }
+	  	img{
+	        width: 200px;
+			height: 280px;
+			object-fit: contain;
+	      }
+	 	&.winner::after{
+	     	content:'';
+	     	position: absolute;
+	     	bottom: 0;
+	     	right: 0;
+	     	width: 100px;
+	     	height: 100px;
+	     	background: '../img/palm-prize.png';
+     		}
+	    }
 	}
 		// MOVIE SHEET
 	section.movie-sheet{
