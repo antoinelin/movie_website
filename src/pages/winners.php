@@ -1,7 +1,7 @@
 
 <main class="cd-winners">
   <header>
-    <h1>21</h1>
+    <h1><?= $target_year ?></h1>
     <p>Ici, la liste des nominés. Des nouveaux espoirs aux plus attendus, ils ont fait l'histoire du Festival.</p>
   </header>
   <section class="winners-posters">
@@ -36,5 +36,5 @@
   </section>
   <?php endforeach ?>
   <a href="<?= URL?>editions" class="all-years">ALL YEARS</a>
-  <a href="#" class="current-year">2005</a>
+  <a href="#" class="current-year"><?= $target_year?></a>
 </main>

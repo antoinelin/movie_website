@@ -1,10 +1,12 @@
 <?php
  
-$title = 'nominees';
-$class = 'nominees';
-// $target_year = $_GET["year"];
 
-$data = $pdo->query("SELECT * from movies WHERE year = 2004");
+
+$target_year = $_GET["year"];
+$title = 'nominees of '.$target_year;
+$class = 'nominees';
+
+$data = $pdo->query("SELECT * from movies WHERE year =".$target_year);
 $data = $data->fetchAll();
 
 
